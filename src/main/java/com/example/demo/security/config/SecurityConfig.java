@@ -52,10 +52,10 @@ public class SecurityConfig {
 
         http
                 .authorizeRequests()
-                .antMatchers("/", "/register", "/login/**", "/login?error*").permitAll()
-                .antMatchers("/mypage", "/login").hasRole("USER")
-                .antMatchers("/buttons").hasRole("MANAGER")
-                .antMatchers("/config").hasRole("ADMIN")
+                .antMatchers("/", "/register", "/login/**", "/login?error*", "/crawlLog", "/api/**").permitAll()
+//                .antMatchers("/mypage", "/login").hasRole("USER")
+//                .antMatchers("/buttons").hasRole("MANAGER")
+//                .antMatchers("/config").hasRole("ADMIN")
                 .anyRequest().authenticated()
 
                 .and()
@@ -65,7 +65,7 @@ public class SecurityConfig {
                 .passwordParameter("userPw")
                 .loginProcessingUrl("/login_proc")
                 .defaultSuccessUrl("/")
-                .authenticationDetailsSource(authenticationDetailsSource)
+//                .authenticationDetailsSource(authenticationDetailsSource)
                 .successHandler(authenticationSuccessHandler)
                 .failureHandler(authenticationFailureHandler)
                 .permitAll()

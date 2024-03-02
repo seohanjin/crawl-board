@@ -27,8 +27,8 @@ dependencies {
 	runtimeOnly 'org.postgresql:postgresql'
 	implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.2.0'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
-
-
+	implementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '2.3.2'
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16'
 
 }
 

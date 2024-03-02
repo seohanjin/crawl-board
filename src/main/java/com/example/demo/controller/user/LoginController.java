@@ -1,6 +1,6 @@
 package com.example.demo.controller.user;
 
-import com.example.demo.Entity.Account.Account;
+import com.example.demo.Entity.Account;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
@@ -23,7 +23,7 @@ public class LoginController {
         model.addAttribute("error", error);
         model.addAttribute("exception", exception);
 
-        return "user/login/login";
+        return "account/login";
     }
 
     @GetMapping("/logout")

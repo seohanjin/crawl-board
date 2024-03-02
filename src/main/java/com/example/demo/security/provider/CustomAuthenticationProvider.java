@@ -42,11 +42,11 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         // username, password 이외에 들어오는 추가적인 파라미터를 가져온다.
         // AuthenticationDetailsSource 와 WebAuthenticationDetails 를 커스터마이징함.
         // AuthenticationManager 에 들어오기 전에 위 두개 과정에서 세팅 과정을 거친다.
-        FormWebAuthenticationDetails formWebAuthenticationDetails = (FormWebAuthenticationDetails) authentication.getDetails();
-        String secretKey = formWebAuthenticationDetails.getSecretKey();
-        if (secretKey == null || !"secret".equals(secretKey)) {
-            throw new InsufficientAuthenticationException("InsufficientAuthenticationException");
-        }
+//        FormWebAuthenticationDetails formWebAuthenticationDetails = (FormWebAuthenticationDetails) authentication.getDetails();
+//        String secretKey = formWebAuthenticationDetails.getSecretKey();
+//        if (secretKey == null || !"secret".equals(secretKey)) {
+//            throw new InsufficientAuthenticationException("InsufficientAuthenticationException");
+//        }
 
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(accountContext.getAccount(), null, accountContext.getAuthorities());
 

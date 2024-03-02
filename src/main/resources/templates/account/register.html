@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Register</title>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+
+                        <div class="card-header justify-content-center"><h3 class="fw-light my-4">회원가입</h3></div>
+                        <div class="card-body">
+                            <!-- Registration form-->
+                            <form class="user" th:action="@{/register}" method="post">
+                                <!-- Form Row-->
+                                <!-- Form Group (first name)-->
+                                <div class="mb-3">
+                                    <label class="small mb-1" for="userId">아이디</label>
+                                    <input class="form-control" id="userId" name="userId" type="text" placeholder="아이디를 입력해주세요.">
+                                </div>
+    <!--                        <div class="col-md-6">-->
+                                <!-- Form Group (last name)-->
+    <!--                            <div class="mb-3">-->
+    <!--                                <label class="small mb-1" for="inputLastName">Last Name</label>-->
+    <!--                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter last name">-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+                                <!-- Form Group (email address)            -->
+            <!--                    <div class="mb-3">-->
+            <!--                        <label class="small mb-1" for="inputEmailAddress">Email</label>-->
+            <!--                        <input class="form-control" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address">-->
+            <!--                    </div>-->
+                                <!-- Form Row    -->
+                                <!-- Form Group (password)-->
+                                <div class="mb-3">
+                                    <label class="small mb-1" for="userPw">Password</label>
+                                    <input class="form-control" id="userPw" name="userPw" type="password" placeholder="비밀번호를 입력해주세요.">
+                                </div>
+    <!--                        <div class="col-md-6">-->
+                                <!-- Form Group (confirm password)-->
+    <!--                            <div class="mb-3">-->
+    <!--                                <label class="small mb-1" for="inputConfirmPassword">Confirm Password</label>-->
+    <!--                                <input class="form-control" id="inputConfirmPassword" type="password" placeholder="Confirm password">-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+                                <!-- Form Group (create account submit)-->
+                                <button type="submit" class="btn btn-primary btn-block">회원가입</button>
+                            </form>
+                        </div>
+            <!--            <div class="card-footer text-center">-->
+            <!--                <div class="small"><a href="auth-login-basic.html">Have an account? Go to login</a></div>-->
+            <!--            </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

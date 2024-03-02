@@ -1,8 +1,8 @@
 package com.example.demo.controller.user;
 
-import com.example.demo.Entity.Account.Account;
-import com.example.demo.Entity.Account.AccountDto;
-import com.example.demo.service.User.UserService;
+import com.example.demo.Entity.Account;
+import com.example.demo.dto.AccountDto;
+import com.example.demo.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -18,7 +18,7 @@ public class RegisterController {
 
     @GetMapping("/register")
     public String createUser() {
-        return "user/login/register";
+        return "account/register";
     }
 
     @PostMapping("/register")

@@ -1,7 +1,8 @@
-package com.example.demo.service.User;
+package com.example.demo.service.impl;
 
-import com.example.demo.Entity.Account.Account;
-import com.example.demo.repository.User.UserRepository;
+import com.example.demo.Entity.Account;
+import com.example.demo.repository.UserRepository;
+import com.example.demo.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import javax.transaction.Transactional;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 

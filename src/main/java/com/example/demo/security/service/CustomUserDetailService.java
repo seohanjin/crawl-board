@@ -1,8 +1,7 @@
 package com.example.demo.security.service;
 
-import com.example.demo.Entity.Account.Account;
-import com.example.demo.repository.User.UserRepository;
-import lombok.NoArgsConstructor;
+import com.example.demo.Entity.Account;
+import com.example.demo.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.GrantedAuthority;
@@ -13,7 +12,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RequiredArgsConstructor
 @Configuration
