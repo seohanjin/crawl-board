@@ -1,0 +1,231 @@
+2024/03/04 14:23:57,974 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-6]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:57,981 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-2]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,981 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-4]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,987 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-4]- Completed 200 OK
+ -2024/03/04 14:23:57,981 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-5]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,974 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-1]- Securing GET /img/undraw_profile_1.svg
+ -2024/03/04 14:23:57,983 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-3]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,989 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5]- Completed 200 OK
+ -2024/03/04 14:23:57,985 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-6]- Secured GET /img/undraw_rocket.svg
+ -2024/03/04 14:23:57,989 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3]- Completed 200 OK
+ -2024/03/04 14:23:57,989 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-6]- GET "/img/undraw_rocket.svg", parameters={}
+ -2024/03/04 14:23:57,987 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2]- Completed 200 OK
+ -2024/03/04 14:23:57,989 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-1]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:57,989 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-1]- Secured GET /img/undraw_profile_1.svg
+ -2024/03/04 14:23:57,989 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1]- GET "/img/undraw_profile_1.svg", parameters={}
+ -2024/03/04 14:23:57,990 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-6]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:57,990 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-6]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,990 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:57,990 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-1]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,991 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-8]- Securing GET /img/undraw_profile_2.svg
+ -2024/03/04 14:23:57,992 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-8]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:57,992 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-8]- Secured GET /img/undraw_profile_2.svg
+ -2024/03/04 14:23:57,992 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-8]- GET "/img/undraw_profile_2.svg", parameters={}
+ -2024/03/04 14:23:57,992 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-8]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:57,993 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-8]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,994 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-6]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,994 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-6]- Completed 200 OK
+ -2024/03/04 14:23:57,994 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-1]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,995 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1]- Completed 200 OK
+ -2024/03/04 14:23:57,996 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-9]- Securing GET /img/undraw_profile_3.svg
+ -2024/03/04 14:23:57,996 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-7]- Securing GET /vendor/bootstrap/js/bootstrap.bundle.min.js
+ -2024/03/04 14:23:57,997 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-9]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:57,997 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-7]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:57,997 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-7]- Secured GET /vendor/bootstrap/js/bootstrap.bundle.min.js
+ -2024/03/04 14:23:57,997 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-7]- GET "/vendor/bootstrap/js/bootstrap.bundle.min.js", parameters={}
+ -2024/03/04 14:23:57,997 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-10]- Securing GET /vendor/jquery-easing/jquery.easing.min.js
+ -2024/03/04 14:23:57,998 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-10]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:57,998 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-10]- Secured GET /vendor/jquery-easing/jquery.easing.min.js
+ -2024/03/04 14:23:57,998 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-10]- GET "/vendor/jquery-easing/jquery.easing.min.js", parameters={}
+ -2024/03/04 14:23:57,998 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-8]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,997 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-9]- Secured GET /img/undraw_profile_3.svg
+ -2024/03/04 14:23:57,999 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-9]- GET "/img/undraw_profile_3.svg", parameters={}
+ -2024/03/04 14:23:57,999 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-8]- Completed 200 OK
+ -2024/03/04 14:23:57,998 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-7]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:57,999 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-7]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:57,999 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-10]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:57,999 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-9]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:58,000 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-9]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,000 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-10]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,004 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-4]- Securing GET /js/sb-admin-2.min.js
+ -2024/03/04 14:23:58,004 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-4]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:58,004 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-4]- Secured GET /js/sb-admin-2.min.js
+ -2024/03/04 14:23:58,004 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-4]- GET "/js/sb-admin-2.min.js", parameters={}
+ -2024/03/04 14:23:58,005 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-7]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,005 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-4]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:58,005 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-7]- Completed 200 OK
+ -2024/03/04 14:23:58,005 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-4]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,005 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-9]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,006 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-9]- Completed 200 OK
+ -2024/03/04 14:23:58,009 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-5]- Securing GET /vendor/datatables/jquery.dataTables.min.js
+ -2024/03/04 14:23:58,009 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-10]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,009 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-5]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:58,010 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-5]- Secured GET /vendor/datatables/jquery.dataTables.min.js
+ -2024/03/04 14:23:58,010 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-10]- Completed 200 OK
+ -2024/03/04 14:23:58,011 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-4]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,011 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-4]- Completed 200 OK
+ -2024/03/04 14:23:58,010 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-5]- GET "/vendor/datatables/jquery.dataTables.min.js", parameters={}
+ -2024/03/04 14:23:58,012 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-5]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:58,013 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-5]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,019 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-5]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,018 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-3]- Securing GET /vendor/datatables/dataTables.bootstrap4.min.js
+ -2024/03/04 14:23:58,019 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-5]- Completed 200 OK
+ -2024/03/04 14:23:58,019 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-3]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:58,020 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-2]- Securing GET /js/demo/datatables-demo.js
+ -2024/03/04 14:23:58,020 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-3]- Secured GET /vendor/datatables/dataTables.bootstrap4.min.js
+ -2024/03/04 14:23:58,020 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-3]- GET "/vendor/datatables/dataTables.bootstrap4.min.js", parameters={}
+ -2024/03/04 14:23:58,020 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-2]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:58,022 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-2]- Secured GET /js/demo/datatables-demo.js
+ -2024/03/04 14:23:58,022 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-2]- GET "/js/demo/datatables-demo.js", parameters={}
+ -2024/03/04 14:23:58,021 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-3]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:58,023 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-2]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:58,023 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-2]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,023 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-3]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,025 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-6]- Securing GET /vendor/fontawesome-free/webfonts/fa-solid-900.woff2
+ -2024/03/04 14:23:58,025 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-6]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:58,026 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-6]- Secured GET /vendor/fontawesome-free/webfonts/fa-solid-900.woff2
+ -2024/03/04 14:23:58,026 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-6]- GET "/vendor/fontawesome-free/webfonts/fa-solid-900.woff2", parameters={}
+ -2024/03/04 14:23:58,026 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-6]- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -2024/03/04 14:23:58,028 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-3]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,028 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-2]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,029 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-3]- Completed 200 OK
+ -2024/03/04 14:23:58,029 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2]- Completed 200 OK
+ -2024/03/04 14:23:58,036 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-6]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,043 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-6]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,043 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-6]- Completed 304 NOT_MODIFIED
+ -2024/03/04 14:23:58,048 [DEBUG]  [org.springframework.security.web.FilterChainProxy] [http-nio-8080-exec-1]- Securing GET /api/crawl?currentPageNum=1
+ -2024/03/04 14:23:58,048 [DEBUG]  [org.springframework.security.web.context.SecurityContextPersistenceFilter] [http-nio-8080-exec-1]- Set SecurityContextHolder to empty SecurityContext
+ -2024/03/04 14:23:58,048 [DEBUG]  [org.springframework.security.web.authentication.AnonymousAuthenticationFilter] [http-nio-8080-exec-1]- Set SecurityContextHolder to anonymous SecurityContext
+ -2024/03/04 14:23:58,048 [DEBUG]  [org.springframework.security.access.intercept.AbstractSecurityInterceptor] [http-nio-8080-exec-1]- Authorized filter invocation [GET /api/crawl?currentPageNum=1] with attributes [permitAll]
+ -2024/03/04 14:23:58,049 [DEBUG]  [org.springframework.security.web.FilterChainProxy$VirtualFilterChain] [http-nio-8080-exec-1]- Secured GET /api/crawl?currentPageNum=1
+ -2024/03/04 14:23:58,049 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1]- GET "/api/crawl?currentPageNum=1", parameters={masked}
+ -2024/03/04 14:23:58,049 [DEBUG]  [org.springframework.web.servlet.handler.AbstractHandlerMapping] [http-nio-8080-exec-1]- Mapped to com.example.demo.restcontroller.crawl.CrawlLogRestController#getCrawlLogList(CrawlLogDto)
+ -2024/03/04 14:23:58,049 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-1]- Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,072 [DEBUG]  [org.springframework.jdbc.datasource.DataSourceUtils] [http-nio-8080-exec-1]- Fetching JDBC Connection from DataSource
+ -2024/03/04 14:23:58,072 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.isValid(5) returned true
+ -2024/03/04 14:23:58,073 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.getAutoCommit() returned true
+ -2024/03/04 14:23:58,074 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.new PreparedStatement returned 
+ -2024/03/04 14:23:58,074 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.prepareStatement(select count(1) as tot_cnt from crawl_log cl) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@1bab0844
+ -2024/03/04 14:23:58,074 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- select count(1) as tot_cnt from crawl_log cl
+
+ -2024/03/04 14:23:58,217 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- select count(1) as tot_cnt from crawl_log cl
+ {executed in 143 msec}
+ -2024/03/04 14:23:58,217 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.execute() returned true
+ -2024/03/04 14:23:58,218 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.new ResultSet returned 
+ -2024/03/04 14:23:58,218 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3fcfbcd1
+ -2024/03/04 14:23:58,218 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getMetaData() returned org.postgresql.jdbc.PgResultSetMetaData@60e42ffc
+ -2024/03/04 14:23:58,220 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getType() returned 1003
+ -2024/03/04 14:23:58,220 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,220 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,224 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getInt(tot_cnt) returned 1000000
+ -2024/03/04 14:23:58,224 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,224 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 
+|--------|
+|tot_cnt |
+|--------|
+|1000000 |
+|--------|
+
+ -2024/03/04 14:23:58,224 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned false
+ -2024/03/04 14:23:58,224 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.close() returned void
+ -2024/03/04 14:23:58,224 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@b428830
+ -2024/03/04 14:23:58,225 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.getMoreResults() returned false
+ -2024/03/04 14:23:58,225 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.getUpdateCount() returned -1
+ -2024/03/04 14:23:58,225 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.close() returned 
+ -2024/03/04 14:23:58,225 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.clearWarnings() returned 
+ -2024/03/04 14:23:58,227 [DEBUG]  [org.springframework.jdbc.datasource.DataSourceUtils] [http-nio-8080-exec-1]- Fetching JDBC Connection from DataSource
+ -2024/03/04 14:23:58,227 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.getAutoCommit() returned true
+ -2024/03/04 14:23:58,227 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.new PreparedStatement returned 
+ -2024/03/04 14:23:58,227 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.prepareStatement(select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2c687635
+ -2024/03/04 14:23:58,228 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.setInt(1, 0) returned 
+ -2024/03/04 14:23:58,228 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+
+ -2024/03/04 14:23:58,230 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+ {executed in 2 msec}
+ -2024/03/04 14:23:58,230 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.execute() returned true
+ -2024/03/04 14:23:58,230 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.new ResultSet returned 
+ -2024/03/04 14:23:58,230 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@782f0d04
+ -2024/03/04 14:23:58,230 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getMetaData() returned org.postgresql.jdbc.PgResultSetMetaData@b155d33
+ -2024/03/04 14:23:58,230 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getType() returned 1003
+ -2024/03/04 14:23:58,230 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,230 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 1000000
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned abcdefghijkalkdjf;laksjdf;lkasjd;flkjasd;lkfjas;ldkfja;slkdjf;a
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-06-02 09:44:48
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999999
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned a769ace788e886f96cb08c6b3666f29a
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-03-03 05:03:59
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,231 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999998
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned d875745f853f4e33aa3cf7074a71f3c2
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-05-15 08:30:33
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999997
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned 1c3d50be4c964c6383009642d8cb6d0e
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-01-15 18:41:09
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999996
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned cd68a14d4602ebd9480ef48564763c7e
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-02-06 20:23:11
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999995
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned 8769dfae4cd1944d789aa5d319bff825
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-08-07 11:40:28
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999994
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned 66bb0135eabeee1a140b060dc5aeb13a
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-08-25 11:23:47
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,232 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999993
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned 951abb491fb94bcdd41d9df9b496ee54
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-01-17 17:40:27
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999992
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned 4af9282a59552f0e3c099431e8e83cef
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-09-16 22:11:52
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned true
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getLong(id) returned 999991
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(content) returned a0c43bae2daf8e54dc6413e22f6a93bb
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.getString(created_at) returned 2023-09-13 03:24:00
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.isClosed() returned false
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 
+|--------|----------------------------------------------------------------|--------------------|
+|id      |content                                                         |created_at          |
+|--------|----------------------------------------------------------------|--------------------|
+|1000000 |abcdefghijkalkdjf;laksjdf;lkasjd;flkjasd;lkfjas;ldkfja;slkdjf;a |2023-06-02 09:44:48 |
+|999999  |a769ace788e886f96cb08c6b3666f29a                                |2023-03-03 05:03:59 |
+|999998  |d875745f853f4e33aa3cf7074a71f3c2                                |2023-05-15 08:30:33 |
+|999997  |1c3d50be4c964c6383009642d8cb6d0e                                |2023-01-15 18:41:09 |
+|999996  |cd68a14d4602ebd9480ef48564763c7e                                |2023-02-06 20:23:11 |
+|999995  |8769dfae4cd1944d789aa5d319bff825                                |2023-08-07 11:40:28 |
+|999994  |66bb0135eabeee1a140b060dc5aeb13a                                |2023-08-25 11:23:47 |
+|999993  |951abb491fb94bcdd41d9df9b496ee54                                |2023-01-17 17:40:27 |
+|999992  |4af9282a59552f0e3c099431e8e83cef                                |2023-09-16 22:11:52 |
+|999991  |a0c43bae2daf8e54dc6413e22f6a93bb                                |2023-09-13 03:24:00 |
+|--------|----------------------------------------------------------------|--------------------|
+
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.next() returned false
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. ResultSet.close() returned void
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@b428830
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.getMoreResults() returned false
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.getUpdateCount() returned -1
+ -2024/03/04 14:23:58,233 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. PreparedStatement.close() returned 
+ -2024/03/04 14:23:58,234 [INFO ]  [net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator] [http-nio-8080-exec-1]- 1. Connection.clearWarnings() returned 
+ -2024/03/04 14:23:58,245 [DEBUG]  [org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor] [http-nio-8080-exec-1]- Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+ -2024/03/04 14:23:58,245 [DEBUG]  [org.springframework.core.log.LogFormatUtils] [http-nio-8080-exec-1]- Writing [{curGrpFirstPageNm=1, crawlList=[com.example.demo.dto.crawl.CrawlLogDto@3aeeea81, com.example.demo.dto.Cra (truncated)...]
+ -2024/03/04 14:23:58,281 [DEBUG]  [org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionResponseWrapper] [http-nio-8080-exec-1]- Did not store anonymous SecurityContext
+ -2024/03/04 14:23:58,281 [DEBUG]  [org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor] [http-nio-8080-exec-1]- Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+ -2024/03/04 14:23:58,281 [DEBUG]  [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-1]- Completed 200 OK
+ -2024/03/04 14:23:58,281 [DEBUG]  [org.springframework.security.web.context.HttpSessionSecurityContextRepository$SaveToSessionResponseWrapper] [http-nio-8080-exec-1]- Did not store anonymous SecurityContext
+ -2024/03/04 14:23:58,281 [DEBUG]  [org.springframework.security.web.context.SecurityContextPersistenceFilter] [http-nio-8080-exec-1]- Cleared SecurityContextHolder to complete request
+ -

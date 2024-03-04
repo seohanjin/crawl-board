@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:log4jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
-    driver-class-name: org.postgresql.Driver
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
 
   jpa:
     hibernate:
@@ -28,7 +28,20 @@ spring:
     allow-bean-definition-overriding: true
 
 logging:
+  config: classpath:log4j2.xml
   level:
+    web: OFF
+    jdbc.sqlonly: OFF
+    jdbc.sqltiming: DEBUG
+    jdbc.audit: OFF
+    jdbc.resultset: OFF
+    jdbc.resultsettable: OFF
+    jdbc.connection: OFF
+    org.hibernate.SQL: OFF
+    org.springframework.web: OFF
+    org.springframework.boot.autoconfigure: INFO
+    com.zaxxer.hikari.HikariDataSource: ERROR
+    org.springframework.jdbc.core.JdbcTemplate: OFF
     org:
       hibernate:
         type:
@@ -36,6 +49,6 @@ logging:
             sql: trace
 
 mybatis:
-  mapper-locations: mapper/*.xml
+  mapper-locations: mapper/**/*.xml
   configuration:
     map-underscore-to-camel-case: true

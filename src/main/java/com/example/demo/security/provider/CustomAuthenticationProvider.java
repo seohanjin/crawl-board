@@ -18,7 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     private final UserDetailsService userDetailsService;
-    private final PasswordEncoder passwordEncoder;
+//    private final PasswordEncoder passwordEncoder;
 
     /**
      *
@@ -35,9 +35,13 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
         AccountContext accountContext = (AccountContext)userDetailsService.loadUserByUsername(userId);
 
-        if(!passwordEncoder.matches(password, accountContext.getAccount().getUserPw())) {
+        if (!password.equals(accountContext.getAccount().getUserPw())) {
             throw new BadCredentialsException("인증에 실패하였습니다.");
         }
+
+//        if(!passwordEncoder.matches(password, accountContext.getAccount().getUserPw())) {
+//            throw new BadCredentialsException("인증에 실패하였습니다.");
+//        }
 
         // username, password 이외에 들어오는 추가적인 파라미터를 가져온다.
         // AuthenticationDetailsSource 와 WebAuthenticationDetails 를 커스터마이징함.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.user.AccountMapper">
+
+    <select id="getAccountList" resultType="com.example.demo.dto.user.AccountDto">
+    /* com.example.demo.mapper.AccountMapper.getAccountList */
+        SELECT USER_ID
+             , USER_PW
+             , AGENCY
+          FROM ACCOUNT CL
+--          ORDER BY  DESC LIMIT 10 OFFSET #{offset}
+    </select>
+
+    <select id="getAccountTotCnt" resultType="int">
+    /* com.example.demo.mapper.AccountMapper.getAccountTotCnt */
+        SELECT COUNT(1)
+          FROM ACCOUNT
+    </select>
+
+</mapper>

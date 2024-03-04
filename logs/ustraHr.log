@@ -1,0 +1,1178 @@
+2024/03/04 14:24:27,591 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 27480 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:24:27,597 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:24:28,146 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:24:28,191 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:24:28,556 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:24:28,569 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:24:28,570 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:24:28,570 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:24:28,667 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:24:28,667 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1034 ms
+2024/03/04 14:24:28,783 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:24:28,821 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:24:28,936 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:24:29,021 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:24:29,164 [INFO ] [j.connection] [main]- 1. Connection opened
+2024/03/04 14:24:29,165 [INFO ] [j.audit] [main]- 1. Connection.new Connection returned 
+2024/03/04 14:24:29,165 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:24:29,165 [INFO ] [j.audit] [main]- 1. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,165 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,168 [INFO ] [j.audit] [main]- 1. Connection.isValid(1) returned true
+2024/03/04 14:24:29,173 [INFO ] [j.audit] [main]- 1. Connection.getTransactionIsolation() returned 2
+2024/03/04 14:24:29,175 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:24:29,178 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@2a0963be
+2024/03/04 14:24:29,180 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@2a0963be
+2024/03/04 14:24:29,192 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:24:29,203 [INFO ] [j.audit] [main]- 1. Connection.getCatalog() returned postgres
+2024/03/04 14:24:29,206 [INFO ] [j.audit] [main]- 1. Statement.new Statement returned 
+2024/03/04 14:24:29,206 [INFO ] [j.audit] [main]- 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@75527e36
+2024/03/04 14:24:29,208 [INFO ] [j.sqlonly] [main]- select current_schema()
+
+2024/03/04 14:24:29,209 [INFO ] [j.sqltiming] [main]- select current_schema()
+ {executed in 1 msec}
+2024/03/04 14:24:29,210 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:24:29,210 [INFO ] [j.audit] [main]- 1. Statement.executeQuery(select current_schema()) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7e2bd5e6
+2024/03/04 14:24:29,213 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned true
+2024/03/04 14:24:29,213 [INFO ] [j.resultset] [main]- 1. ResultSet.getString(1) returned public
+2024/03/04 14:24:29,214 [INFO ] [j.resultsettable] [main]- 
+|---------------|
+|current_schema |
+|---------------|
+|public         |
+|---------------|
+
+2024/03/04 14:24:29,214 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:24:29,214 [INFO ] [j.audit] [main]- 1. Statement.close() returned 
+2024/03/04 14:24:29,217 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@2a0963be
+2024/03/04 14:24:29,219 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:24:29,376 [INFO ] [j.connection] [HikariPool-1 connection adder]- 2. Connection opened
+2024/03/04 14:24:29,377 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.new Connection returned 
+2024/03/04 14:24:29,377 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,377 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,451 [INFO ] [j.connection] [HikariPool-1 connection adder]- 3. Connection opened
+2024/03/04 14:24:29,452 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.new Connection returned 
+2024/03/04 14:24:29,452 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,452 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,528 [INFO ] [j.connection] [HikariPool-1 connection adder]- 4. Connection opened
+2024/03/04 14:24:29,529 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.new Connection returned 
+2024/03/04 14:24:29,529 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,529 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,605 [INFO ] [j.connection] [HikariPool-1 connection adder]- 5. Connection opened
+2024/03/04 14:24:29,605 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.new Connection returned 
+2024/03/04 14:24:29,606 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,606 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,647 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,650 [INFO ] [j.audit] [main]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:24:29,650 [INFO ] [j.audit] [main]- 1. Connection.prepareStatement(select * from information_schema.sequences) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@4cf01c41
+2024/03/04 14:24:29,651 [INFO ] [j.sqlonly] [main]- select * from information_schema.sequences
+
+2024/03/04 14:24:29,660 [INFO ] [j.sqltiming] [main]- select * from information_schema.sequences
+ {executed in 8 msec}
+2024/03/04 14:24:29,660 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:24:29,660 [INFO ] [j.audit] [main]- 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@409395b9
+2024/03/04 14:24:29,661 [INFO ] [j.resultsettable] [main]- 
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|sequence_catalog |sequence_schema |sequence_name |data_type |numeric_precision |numeric_precision_radix |numeric_scale |start_value |minimum_value |maximum_value |increment |cycle_option |
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+
+2024/03/04 14:24:29,661 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned false
+2024/03/04 14:24:29,661 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:24:29,661 [INFO ] [j.audit] [main]- 1. PreparedStatement.close() returned 
+2024/03/04 14:24:29,665 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@2a0963be
+2024/03/04 14:24:29,680 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:24:29,680 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:24:29,695 [INFO ] [j.connection] [HikariPool-1 connection adder]- 6. Connection opened
+2024/03/04 14:24:29,695 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.new Connection returned 
+2024/03/04 14:24:29,696 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,696 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,701 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:24:29,775 [INFO ] [j.connection] [HikariPool-1 connection adder]- 7. Connection opened
+2024/03/04 14:24:29,775 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.new Connection returned 
+2024/03/04 14:24:29,775 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,775 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,860 [INFO ] [j.connection] [HikariPool-1 connection adder]- 8. Connection opened
+2024/03/04 14:24:29,860 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.new Connection returned 
+2024/03/04 14:24:29,860 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,860 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.getAutoCommit() returned true
+2024/03/04 14:24:29,935 [INFO ] [j.connection] [HikariPool-1 connection adder]- 9. Connection opened
+2024/03/04 14:24:29,935 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.new Connection returned 
+2024/03/04 14:24:29,935 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.isReadOnly() returned false
+2024/03/04 14:24:29,935 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.getAutoCommit() returned true
+2024/03/04 14:24:30,013 [INFO ] [j.connection] [HikariPool-1 connection adder]- 10. Connection opened
+2024/03/04 14:24:30,013 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.new Connection returned 
+2024/03/04 14:24:30,013 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.isReadOnly() returned false
+2024/03/04 14:24:30,013 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.getAutoCommit() returned true
+2024/03/04 14:24:30,175 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c7db0e8, org.springframework.security.web.header.HeaderWriterFilter@76673ed, org.springframework.security.web.csrf.CsrfFilter@61607ff0, org.springframework.security.web.authentication.logout.LogoutFilter@64e3bc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6dfebd2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@84becbe, org.springframework.security.web.access.ExceptionTranslationFilter@2570851e, org.springframework.security.web.access.intercept.AuthorizationFilter@4511146f]
+2024/03/04 14:24:30,197 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45648e75, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e344f14, org.springframework.security.web.context.SecurityContextPersistenceFilter@2db6ba81, org.springframework.security.web.header.HeaderWriterFilter@7615666e, org.springframework.security.web.csrf.CsrfFilter@1055d261, org.springframework.security.web.authentication.logout.LogoutFilter@8ce4320, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16cbba0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16fb9fdd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14bd523b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d117280, org.springframework.security.web.session.SessionManagementFilter@32b1e906, org.springframework.security.web.access.ExceptionTranslationFilter@2d758472, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b9dc62f]
+2024/03/04 14:24:30,228 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:24:30,324 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:24:30,460 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:24:30,486 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:24:30,500 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.276 seconds (JVM running for 4.187)
+2024/03/04 14:24:36,788 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:24:36,788 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Initializing Servlet 'dispatcherServlet'
+2024/03/04 14:24:36,789 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Completed initialization in 1 ms
+2024/03/04 14:24:36,838 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ㅎㅇㅎㅇ
+2024/03/04 14:24:37,183 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.isValid(5) returned true
+2024/03/04 14:24:37,183 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:24:37,184 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:24:37,185 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.prepareStatement(select count(1) as tot_cnt from crawl_log cl) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@4a9102af
+2024/03/04 14:24:37,187 [INFO ] [j.sqlonly] [http-nio-8080-exec-2]- select count(1) as tot_cnt from crawl_log cl
+
+2024/03/04 14:24:37,316 [INFO ] [j.sqltiming] [http-nio-8080-exec-2]- select count(1) as tot_cnt from crawl_log cl
+ {executed in 128 msec}
+2024/03/04 14:24:37,317 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.execute() returned true
+2024/03/04 14:24:37,317 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:24:37,317 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@4a28757a
+2024/03/04 14:24:37,318 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getMetaData() returned org.postgresql.jdbc.PgResultSetMetaData@7fa556d1
+2024/03/04 14:24:37,319 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getType() returned 1003
+2024/03/04 14:24:37,319 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,319 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,324 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getInt(tot_cnt) returned 1000000
+2024/03/04 14:24:37,324 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,324 [INFO ] [j.resultsettable] [http-nio-8080-exec-2]- 
+|--------|
+|tot_cnt |
+|--------|
+|1000000 |
+|--------|
+
+2024/03/04 14:24:37,324 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned false
+2024/03/04 14:24:37,324 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.close() returned void
+2024/03/04 14:24:37,324 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@2a0963be
+2024/03/04 14:24:37,324 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.getMoreResults() returned false
+2024/03/04 14:24:37,324 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.getUpdateCount() returned -1
+2024/03/04 14:24:37,325 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.close() returned 
+2024/03/04 14:24:37,325 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:24:37,327 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:24:37,328 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:24:37,328 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.prepareStatement(select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@748fc553
+2024/03/04 14:24:37,328 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.setInt(1, 0) returned 
+2024/03/04 14:24:37,328 [INFO ] [j.sqlonly] [http-nio-8080-exec-2]- select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+
+2024/03/04 14:24:37,330 [INFO ] [j.sqltiming] [http-nio-8080-exec-2]- select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+ {executed in 2 msec}
+2024/03/04 14:24:37,330 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.execute() returned true
+2024/03/04 14:24:37,330 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:24:37,330 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3ceae58e
+2024/03/04 14:24:37,331 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getMetaData() returned org.postgresql.jdbc.PgResultSetMetaData@2ba21194
+2024/03/04 14:24:37,331 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getType() returned 1003
+2024/03/04 14:24:37,331 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,331 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,331 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 1000000
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned abcdefghijkalkdjf;laksjdf;lkasjd;flkjasd;lkfjas;ldkfja;slkdjf;a
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-06-02 09:44:48
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999999
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned a769ace788e886f96cb08c6b3666f29a
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-03-03 05:03:59
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999998
+2024/03/04 14:24:37,332 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned d875745f853f4e33aa3cf7074a71f3c2
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-05-15 08:30:33
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999997
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned 1c3d50be4c964c6383009642d8cb6d0e
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-01-15 18:41:09
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999996
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned cd68a14d4602ebd9480ef48564763c7e
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-02-06 20:23:11
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999995
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned 8769dfae4cd1944d789aa5d319bff825
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-08-07 11:40:28
+2024/03/04 14:24:37,333 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999994
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned 66bb0135eabeee1a140b060dc5aeb13a
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-08-25 11:23:47
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999993
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned 951abb491fb94bcdd41d9df9b496ee54
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-01-17 17:40:27
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999992
+2024/03/04 14:24:37,334 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned 4af9282a59552f0e3c099431e8e83cef
+2024/03/04 14:24:37,335 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-09-16 22:11:52
+2024/03/04 14:24:37,335 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,335 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned true
+2024/03/04 14:24:37,335 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getLong(id) returned 999991
+2024/03/04 14:24:37,335 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(content) returned a0c43bae2daf8e54dc6413e22f6a93bb
+2024/03/04 14:24:37,335 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.getString(created_at) returned 2023-09-13 03:24:00
+2024/03/04 14:24:37,335 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:24:37,336 [INFO ] [j.resultsettable] [http-nio-8080-exec-2]- 
+|--------|----------------------------------------------------------------|--------------------|
+|id      |content                                                         |created_at          |
+|--------|----------------------------------------------------------------|--------------------|
+|1000000 |abcdefghijkalkdjf;laksjdf;lkasjd;flkjasd;lkfjas;ldkfja;slkdjf;a |2023-06-02 09:44:48 |
+|999999  |a769ace788e886f96cb08c6b3666f29a                                |2023-03-03 05:03:59 |
+|999998  |d875745f853f4e33aa3cf7074a71f3c2                                |2023-05-15 08:30:33 |
+|999997  |1c3d50be4c964c6383009642d8cb6d0e                                |2023-01-15 18:41:09 |
+|999996  |cd68a14d4602ebd9480ef48564763c7e                                |2023-02-06 20:23:11 |
+|999995  |8769dfae4cd1944d789aa5d319bff825                                |2023-08-07 11:40:28 |
+|999994  |66bb0135eabeee1a140b060dc5aeb13a                                |2023-08-25 11:23:47 |
+|999993  |951abb491fb94bcdd41d9df9b496ee54                                |2023-01-17 17:40:27 |
+|999992  |4af9282a59552f0e3c099431e8e83cef                                |2023-09-16 22:11:52 |
+|999991  |a0c43bae2daf8e54dc6413e22f6a93bb                                |2023-09-13 03:24:00 |
+|--------|----------------------------------------------------------------|--------------------|
+
+2024/03/04 14:24:37,336 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.next() returned false
+2024/03/04 14:24:37,337 [INFO ] [j.resultset] [http-nio-8080-exec-2]- 1. ResultSet.close() returned void
+2024/03/04 14:24:37,337 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@2a0963be
+2024/03/04 14:24:37,337 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.getMoreResults() returned false
+2024/03/04 14:24:37,337 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.getUpdateCount() returned -1
+2024/03/04 14:24:37,337 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. PreparedStatement.close() returned 
+2024/03/04 14:24:37,337 [INFO ] [j.audit] [http-nio-8080-exec-2]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:31:08,839 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 26348 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:31:08,846 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:31:09,393 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:31:09,441 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:31:09,818 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:31:09,823 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:31:09,824 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:31:09,825 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:31:09,945 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:31:09,945 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1066 ms
+2024/03/04 14:31:10,064 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:31:10,103 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:31:10,225 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:31:10,308 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:31:10,435 [INFO ] [j.connection] [main]- 1. Connection opened
+2024/03/04 14:31:10,435 [INFO ] [j.audit] [main]- 1. Connection.new Connection returned 
+2024/03/04 14:31:10,436 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:31:10,436 [INFO ] [j.audit] [main]- 1. Connection.isReadOnly() returned false
+2024/03/04 14:31:10,436 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:31:10,439 [INFO ] [j.audit] [main]- 1. Connection.isValid(1) returned true
+2024/03/04 14:31:10,445 [INFO ] [j.audit] [main]- 1. Connection.getTransactionIsolation() returned 2
+2024/03/04 14:31:10,446 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:31:10,451 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@5b7308aa
+2024/03/04 14:31:10,451 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@5b7308aa
+2024/03/04 14:31:10,465 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:31:10,474 [INFO ] [j.audit] [main]- 1. Connection.getCatalog() returned postgres
+2024/03/04 14:31:10,478 [INFO ] [j.audit] [main]- 1. Statement.new Statement returned 
+2024/03/04 14:31:10,478 [INFO ] [j.audit] [main]- 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@4b6b5352
+2024/03/04 14:31:10,480 [INFO ] [j.sqlonly] [main]- select current_schema()
+
+2024/03/04 14:31:10,481 [INFO ] [j.sqltiming] [main]- select current_schema()
+ {executed in 1 msec}
+2024/03/04 14:31:10,482 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:31:10,483 [INFO ] [j.audit] [main]- 1. Statement.executeQuery(select current_schema()) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@60c96eb4
+2024/03/04 14:31:10,485 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned true
+2024/03/04 14:31:10,485 [INFO ] [j.resultset] [main]- 1. ResultSet.getString(1) returned public
+2024/03/04 14:31:10,485 [INFO ] [j.resultsettable] [main]- 
+|---------------|
+|current_schema |
+|---------------|
+|public         |
+|---------------|
+
+2024/03/04 14:31:10,485 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:31:10,485 [INFO ] [j.audit] [main]- 1. Statement.close() returned 
+2024/03/04 14:31:10,489 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@5b7308aa
+2024/03/04 14:31:10,491 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:31:10,638 [INFO ] [j.connection] [HikariPool-1 connection adder]- 2. Connection opened
+2024/03/04 14:31:10,639 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.new Connection returned 
+2024/03/04 14:31:10,639 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.isReadOnly() returned false
+2024/03/04 14:31:10,639 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.getAutoCommit() returned true
+2024/03/04 14:31:10,719 [INFO ] [j.connection] [HikariPool-1 connection adder]- 3. Connection opened
+2024/03/04 14:31:10,720 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.new Connection returned 
+2024/03/04 14:31:10,720 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.isReadOnly() returned false
+2024/03/04 14:31:10,720 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.getAutoCommit() returned true
+2024/03/04 14:31:10,792 [INFO ] [j.connection] [HikariPool-1 connection adder]- 4. Connection opened
+2024/03/04 14:31:10,793 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.new Connection returned 
+2024/03/04 14:31:10,793 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.isReadOnly() returned false
+2024/03/04 14:31:10,793 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.getAutoCommit() returned true
+2024/03/04 14:31:10,867 [INFO ] [j.connection] [HikariPool-1 connection adder]- 5. Connection opened
+2024/03/04 14:31:10,867 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.new Connection returned 
+2024/03/04 14:31:10,867 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.isReadOnly() returned false
+2024/03/04 14:31:10,868 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.getAutoCommit() returned true
+2024/03/04 14:31:10,919 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:31:10,921 [INFO ] [j.audit] [main]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:31:10,921 [INFO ] [j.audit] [main]- 1. Connection.prepareStatement(select * from information_schema.sequences) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5e80d5
+2024/03/04 14:31:10,922 [INFO ] [j.sqlonly] [main]- select * from information_schema.sequences
+
+2024/03/04 14:31:10,930 [INFO ] [j.sqltiming] [main]- select * from information_schema.sequences
+ {executed in 8 msec}
+2024/03/04 14:31:10,930 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:31:10,930 [INFO ] [j.audit] [main]- 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7ccf6114
+2024/03/04 14:31:10,931 [INFO ] [j.resultsettable] [main]- 
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|sequence_catalog |sequence_schema |sequence_name |data_type |numeric_precision |numeric_precision_radix |numeric_scale |start_value |minimum_value |maximum_value |increment |cycle_option |
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+
+2024/03/04 14:31:10,931 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned false
+2024/03/04 14:31:10,932 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:31:10,932 [INFO ] [j.audit] [main]- 1. PreparedStatement.close() returned 
+2024/03/04 14:31:10,935 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@5b7308aa
+2024/03/04 14:31:10,946 [INFO ] [j.connection] [HikariPool-1 connection adder]- 6. Connection opened
+2024/03/04 14:31:10,946 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.new Connection returned 
+2024/03/04 14:31:10,946 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.isReadOnly() returned false
+2024/03/04 14:31:10,946 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.getAutoCommit() returned true
+2024/03/04 14:31:10,951 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:31:10,951 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:31:10,961 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:31:11,018 [INFO ] [j.connection] [HikariPool-1 connection adder]- 7. Connection opened
+2024/03/04 14:31:11,018 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.new Connection returned 
+2024/03/04 14:31:11,018 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.isReadOnly() returned false
+2024/03/04 14:31:11,018 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.getAutoCommit() returned true
+2024/03/04 14:31:11,093 [INFO ] [j.connection] [HikariPool-1 connection adder]- 8. Connection opened
+2024/03/04 14:31:11,094 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.new Connection returned 
+2024/03/04 14:31:11,094 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.isReadOnly() returned false
+2024/03/04 14:31:11,094 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.getAutoCommit() returned true
+2024/03/04 14:31:11,172 [INFO ] [j.connection] [HikariPool-1 connection adder]- 9. Connection opened
+2024/03/04 14:31:11,172 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.new Connection returned 
+2024/03/04 14:31:11,172 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.isReadOnly() returned false
+2024/03/04 14:31:11,172 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.getAutoCommit() returned true
+2024/03/04 14:31:11,247 [INFO ] [j.connection] [HikariPool-1 connection adder]- 10. Connection opened
+2024/03/04 14:31:11,247 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.new Connection returned 
+2024/03/04 14:31:11,248 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.isReadOnly() returned false
+2024/03/04 14:31:11,248 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.getAutoCommit() returned true
+2024/03/04 14:31:11,435 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18c0f025, org.springframework.security.web.header.HeaderWriterFilter@89465d9, org.springframework.security.web.csrf.CsrfFilter@61648dd2, org.springframework.security.web.authentication.logout.LogoutFilter@f310675, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19355a56, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@684f7f1c, org.springframework.security.web.access.ExceptionTranslationFilter@1bb0fa38, org.springframework.security.web.access.intercept.AuthorizationFilter@6885f3f7]
+2024/03/04 14:31:11,458 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e5af973, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39a2e77d, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dc39412, org.springframework.security.web.header.HeaderWriterFilter@8ce4320, org.springframework.security.web.csrf.CsrfFilter@14bd523b, org.springframework.security.web.authentication.logout.LogoutFilter@2e38d44e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@340c7479, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@147ad4bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bd703bb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1aee6983, org.springframework.security.web.session.SessionManagementFilter@3c538e62, org.springframework.security.web.access.ExceptionTranslationFilter@cc7909f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d117280]
+2024/03/04 14:31:11,489 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:31:11,597 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:31:11,748 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:31:11,779 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:31:11,788 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.325 seconds (JVM running for 4.208)
+2024/03/04 14:31:18,031 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:31:18,031 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Initializing Servlet 'dispatcherServlet'
+2024/03/04 14:31:18,032 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Completed initialization in 1 ms
+2024/03/04 14:31:18,078 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ㅎㅇㅎㅇ
+2024/03/04 14:31:18,424 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.isValid(5) returned true
+2024/03/04 14:31:18,424 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:31:18,425 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:31:18,425 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.prepareStatement(select count(1) as tot_cnt from crawl_log cl) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@71ae4424
+2024/03/04 14:31:18,426 [INFO ] [j.sqlonly] [http-nio-8080-exec-3]- select count(1) as tot_cnt from crawl_log cl
+
+2024/03/04 14:31:18,548 [INFO ] [j.sqltiming] [http-nio-8080-exec-3]- select count(1) as tot_cnt from crawl_log cl
+ {executed in 122 msec}
+2024/03/04 14:31:18,548 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.execute() returned true
+2024/03/04 14:31:18,549 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:31:18,549 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@73249e57
+2024/03/04 14:31:18,549 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getMetaData() returned org.postgresql.jdbc.PgResultSetMetaData@44864d6a
+2024/03/04 14:31:18,550 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getType() returned 1003
+2024/03/04 14:31:18,550 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,550 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,554 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getInt(tot_cnt) returned 1000000
+2024/03/04 14:31:18,554 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,554 [INFO ] [j.resultsettable] [http-nio-8080-exec-3]- 
+|--------|
+|tot_cnt |
+|--------|
+|1000000 |
+|--------|
+
+2024/03/04 14:31:18,554 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned false
+2024/03/04 14:31:18,554 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.close() returned void
+2024/03/04 14:31:18,554 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@5b7308aa
+2024/03/04 14:31:18,554 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.getMoreResults() returned false
+2024/03/04 14:31:18,555 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.getUpdateCount() returned -1
+2024/03/04 14:31:18,555 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.close() returned 
+2024/03/04 14:31:18,555 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:31:18,557 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:31:18,557 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:31:18,558 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.prepareStatement(select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@62200a80
+2024/03/04 14:31:18,558 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.setInt(1, 0) returned 
+2024/03/04 14:31:18,558 [INFO ] [j.sqlonly] [http-nio-8080-exec-3]- select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+
+2024/03/04 14:31:18,560 [INFO ] [j.sqltiming] [http-nio-8080-exec-3]- select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+ {executed in 2 msec}
+2024/03/04 14:31:18,561 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.execute() returned true
+2024/03/04 14:31:18,561 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:31:18,561 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1ab28894
+2024/03/04 14:31:18,561 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getMetaData() returned org.postgresql.jdbc.PgResultSetMetaData@1ebcba25
+2024/03/04 14:31:18,561 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getType() returned 1003
+2024/03/04 14:31:18,561 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,561 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,562 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 1000000
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned abcdefghijkalkdjf;laksjdf;lkasjd;flkjasd;lkfjas;ldkfja;slkdjf;a
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-06-02 09:44:48
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999999
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned a769ace788e886f96cb08c6b3666f29a
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-03-03 05:03:59
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999998
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned d875745f853f4e33aa3cf7074a71f3c2
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-05-15 08:30:33
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999997
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned 1c3d50be4c964c6383009642d8cb6d0e
+2024/03/04 14:31:18,563 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-01-15 18:41:09
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999996
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned cd68a14d4602ebd9480ef48564763c7e
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-02-06 20:23:11
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999995
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned 8769dfae4cd1944d789aa5d319bff825
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-08-07 11:40:28
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999994
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned 66bb0135eabeee1a140b060dc5aeb13a
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-08-25 11:23:47
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,564 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999993
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned 951abb491fb94bcdd41d9df9b496ee54
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-01-17 17:40:27
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999992
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned 4af9282a59552f0e3c099431e8e83cef
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-09-16 22:11:52
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned true
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getLong(id) returned 999991
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(content) returned a0c43bae2daf8e54dc6413e22f6a93bb
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.getString(created_at) returned 2023-09-13 03:24:00
+2024/03/04 14:31:18,565 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:18,566 [INFO ] [j.resultsettable] [http-nio-8080-exec-3]- 
+|--------|----------------------------------------------------------------|--------------------|
+|id      |content                                                         |created_at          |
+|--------|----------------------------------------------------------------|--------------------|
+|1000000 |abcdefghijkalkdjf;laksjdf;lkasjd;flkjasd;lkfjas;ldkfja;slkdjf;a |2023-06-02 09:44:48 |
+|999999  |a769ace788e886f96cb08c6b3666f29a                                |2023-03-03 05:03:59 |
+|999998  |d875745f853f4e33aa3cf7074a71f3c2                                |2023-05-15 08:30:33 |
+|999997  |1c3d50be4c964c6383009642d8cb6d0e                                |2023-01-15 18:41:09 |
+|999996  |cd68a14d4602ebd9480ef48564763c7e                                |2023-02-06 20:23:11 |
+|999995  |8769dfae4cd1944d789aa5d319bff825                                |2023-08-07 11:40:28 |
+|999994  |66bb0135eabeee1a140b060dc5aeb13a                                |2023-08-25 11:23:47 |
+|999993  |951abb491fb94bcdd41d9df9b496ee54                                |2023-01-17 17:40:27 |
+|999992  |4af9282a59552f0e3c099431e8e83cef                                |2023-09-16 22:11:52 |
+|999991  |a0c43bae2daf8e54dc6413e22f6a93bb                                |2023-09-13 03:24:00 |
+|--------|----------------------------------------------------------------|--------------------|
+
+2024/03/04 14:31:18,566 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.next() returned false
+2024/03/04 14:31:18,566 [INFO ] [j.resultset] [http-nio-8080-exec-3]- 1. ResultSet.close() returned void
+2024/03/04 14:31:18,566 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@5b7308aa
+2024/03/04 14:31:18,566 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.getMoreResults() returned false
+2024/03/04 14:31:18,566 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.getUpdateCount() returned -1
+2024/03/04 14:31:18,566 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. PreparedStatement.close() returned 
+2024/03/04 14:31:18,566 [INFO ] [j.audit] [http-nio-8080-exec-3]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:31:49,679 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 45320 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:31:49,686 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:31:50,217 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:31:50,257 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:31:50,618 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:31:50,623 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:31:50,624 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:31:50,625 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:31:50,730 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:31:50,731 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1007 ms
+2024/03/04 14:31:50,847 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:31:50,885 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:31:50,998 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:31:51,075 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:31:51,212 [INFO ] [j.connection] [main]- 1. Connection opened
+2024/03/04 14:31:51,212 [INFO ] [j.audit] [main]- 1. Connection.new Connection returned 
+2024/03/04 14:31:51,213 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:31:51,213 [INFO ] [j.audit] [main]- 1. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,213 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,216 [INFO ] [j.audit] [main]- 1. Connection.isValid(1) returned true
+2024/03/04 14:31:51,221 [INFO ] [j.audit] [main]- 1. Connection.getTransactionIsolation() returned 2
+2024/03/04 14:31:51,223 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:31:51,226 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@4af12a63
+2024/03/04 14:31:51,228 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@4af12a63
+2024/03/04 14:31:51,244 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:31:51,260 [INFO ] [j.audit] [main]- 1. Connection.getCatalog() returned postgres
+2024/03/04 14:31:51,264 [INFO ] [j.audit] [main]- 1. Statement.new Statement returned 
+2024/03/04 14:31:51,265 [INFO ] [j.audit] [main]- 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@3386c206
+2024/03/04 14:31:51,266 [INFO ] [j.sqlonly] [main]- select current_schema()
+
+2024/03/04 14:31:51,267 [INFO ] [j.sqltiming] [main]- select current_schema()
+ {executed in 0 msec}
+2024/03/04 14:31:51,269 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:31:51,269 [INFO ] [j.audit] [main]- 1. Statement.executeQuery(select current_schema()) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3db1ce78
+2024/03/04 14:31:51,272 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned true
+2024/03/04 14:31:51,272 [INFO ] [j.resultset] [main]- 1. ResultSet.getString(1) returned public
+2024/03/04 14:31:51,273 [INFO ] [j.resultsettable] [main]- 
+|---------------|
+|current_schema |
+|---------------|
+|public         |
+|---------------|
+
+2024/03/04 14:31:51,273 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:31:51,273 [INFO ] [j.audit] [main]- 1. Statement.close() returned 
+2024/03/04 14:31:51,276 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@4af12a63
+2024/03/04 14:31:51,279 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:31:51,407 [INFO ] [j.connection] [HikariPool-1 connection adder]- 2. Connection opened
+2024/03/04 14:31:51,408 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.new Connection returned 
+2024/03/04 14:31:51,408 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,408 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,491 [INFO ] [j.connection] [HikariPool-1 connection adder]- 3. Connection opened
+2024/03/04 14:31:51,491 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.new Connection returned 
+2024/03/04 14:31:51,491 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,491 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,568 [INFO ] [j.connection] [HikariPool-1 connection adder]- 4. Connection opened
+2024/03/04 14:31:51,569 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.new Connection returned 
+2024/03/04 14:31:51,569 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,569 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,645 [INFO ] [j.connection] [HikariPool-1 connection adder]- 5. Connection opened
+2024/03/04 14:31:51,645 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.new Connection returned 
+2024/03/04 14:31:51,645 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,645 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,709 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,712 [INFO ] [j.audit] [main]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:31:51,712 [INFO ] [j.audit] [main]- 1. Connection.prepareStatement(select * from information_schema.sequences) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@670c171c
+2024/03/04 14:31:51,714 [INFO ] [j.sqlonly] [main]- select * from information_schema.sequences
+
+2024/03/04 14:31:51,723 [INFO ] [j.sqltiming] [main]- select * from information_schema.sequences
+ {executed in 9 msec}
+2024/03/04 14:31:51,723 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:31:51,723 [INFO ] [j.audit] [main]- 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@46d69ca4
+2024/03/04 14:31:51,724 [INFO ] [j.resultsettable] [main]- 
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|sequence_catalog |sequence_schema |sequence_name |data_type |numeric_precision |numeric_precision_radix |numeric_scale |start_value |minimum_value |maximum_value |increment |cycle_option |
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+
+2024/03/04 14:31:51,725 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned false
+2024/03/04 14:31:51,725 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:31:51,725 [INFO ] [j.audit] [main]- 1. PreparedStatement.close() returned 
+2024/03/04 14:31:51,729 [INFO ] [j.connection] [HikariPool-1 connection adder]- 6. Connection opened
+2024/03/04 14:31:51,729 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.new Connection returned 
+2024/03/04 14:31:51,730 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,730 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@4af12a63
+2024/03/04 14:31:51,730 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,748 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:31:51,749 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:31:51,762 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:31:51,819 [INFO ] [j.connection] [HikariPool-1 connection adder]- 7. Connection opened
+2024/03/04 14:31:51,819 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.new Connection returned 
+2024/03/04 14:31:51,819 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,820 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,897 [INFO ] [j.connection] [HikariPool-1 connection adder]- 8. Connection opened
+2024/03/04 14:31:51,897 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.new Connection returned 
+2024/03/04 14:31:51,897 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,897 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.getAutoCommit() returned true
+2024/03/04 14:31:51,973 [INFO ] [j.connection] [HikariPool-1 connection adder]- 9. Connection opened
+2024/03/04 14:31:51,973 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.new Connection returned 
+2024/03/04 14:31:51,973 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.isReadOnly() returned false
+2024/03/04 14:31:51,973 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.getAutoCommit() returned true
+2024/03/04 14:31:52,047 [INFO ] [j.connection] [HikariPool-1 connection adder]- 10. Connection opened
+2024/03/04 14:31:52,048 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.new Connection returned 
+2024/03/04 14:31:52,048 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.isReadOnly() returned false
+2024/03/04 14:31:52,048 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.getAutoCommit() returned true
+2024/03/04 14:31:52,214 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59e4a044, org.springframework.security.web.header.HeaderWriterFilter@354e2bff, org.springframework.security.web.csrf.CsrfFilter@7320750c, org.springframework.security.web.authentication.logout.LogoutFilter@1c382179, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dfca9e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4be3de36, org.springframework.security.web.access.ExceptionTranslationFilter@62f305bc, org.springframework.security.web.access.intercept.AuthorizationFilter@5e0bba2f]
+2024/03/04 14:31:52,237 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d28a235, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43e30f15, org.springframework.security.web.context.SecurityContextPersistenceFilter@72641613, org.springframework.security.web.header.HeaderWriterFilter@2e38d44e, org.springframework.security.web.csrf.CsrfFilter@bd703bb, org.springframework.security.web.authentication.logout.LogoutFilter@2484c868, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@848d9bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20e3b165, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34d3bfca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fc2933e, org.springframework.security.web.session.SessionManagementFilter@5f5c0eda, org.springframework.security.web.access.ExceptionTranslationFilter@2a9565d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1aee6983]
+2024/03/04 14:31:52,273 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:31:52,374 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:31:52,504 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:31:52,536 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:31:52,546 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.326 seconds (JVM running for 4.265)
+2024/03/04 14:31:57,048 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:31:57,048 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Initializing Servlet 'dispatcherServlet'
+2024/03/04 14:31:57,049 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Completed initialization in 1 ms
+2024/03/04 14:31:57,095 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ㅎㅇㅎㅇ
+2024/03/04 14:31:57,430 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.isValid(5) returned true
+2024/03/04 14:31:57,430 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:31:57,431 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:31:57,432 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.prepareStatement(select count(1) as tot_cnt from crawl_log cl) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@15cb37f8
+2024/03/04 14:31:57,432 [INFO ] [j.sqlonly] [http-nio-8080-exec-8]- select count(1) as tot_cnt from crawl_log cl
+
+2024/03/04 14:31:57,563 [INFO ] [j.sqltiming] [http-nio-8080-exec-8]- select count(1) as tot_cnt from crawl_log cl
+ {executed in 131 msec}
+2024/03/04 14:31:57,564 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.execute() returned true
+2024/03/04 14:31:57,564 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:31:57,564 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@609fa49b
+2024/03/04 14:31:57,564 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getMetaData() returned org.postgresql.jdbc.PgResultSetMetaData@6d3cb8ef
+2024/03/04 14:31:57,565 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getType() returned 1003
+2024/03/04 14:31:57,565 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,565 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,569 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getInt(tot_cnt) returned 1000000
+2024/03/04 14:31:57,569 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,569 [INFO ] [j.resultsettable] [http-nio-8080-exec-8]- 
+|--------|
+|tot_cnt |
+|--------|
+|1000000 |
+|--------|
+
+2024/03/04 14:31:57,569 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned false
+2024/03/04 14:31:57,570 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.close() returned void
+2024/03/04 14:31:57,570 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@4af12a63
+2024/03/04 14:31:57,570 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.getMoreResults() returned false
+2024/03/04 14:31:57,570 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.getUpdateCount() returned -1
+2024/03/04 14:31:57,570 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.close() returned 
+2024/03/04 14:31:57,570 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:31:57,572 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:31:57,572 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:31:57,573 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.prepareStatement(select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@9304ebc
+2024/03/04 14:31:57,573 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.setInt(1, 0) returned 
+2024/03/04 14:31:57,573 [INFO ] [j.sqlonly] [http-nio-8080-exec-8]- select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+
+2024/03/04 14:31:57,575 [INFO ] [j.sqltiming] [http-nio-8080-exec-8]- select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+ {executed in 2 msec}
+2024/03/04 14:31:57,575 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.execute() returned true
+2024/03/04 14:31:57,575 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:31:57,575 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@36a8f3f1
+2024/03/04 14:31:57,576 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getMetaData() returned org.postgresql.jdbc.PgResultSetMetaData@177c236
+2024/03/04 14:31:57,576 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getType() returned 1003
+2024/03/04 14:31:57,576 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,576 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,576 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 1000000
+2024/03/04 14:31:57,576 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned abcdefghijkalkdjf;laksjdf;lkasjd;flkjasd;lkfjas;ldkfja;slkdjf;a
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-06-02 09:44:48
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999999
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned a769ace788e886f96cb08c6b3666f29a
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-03-03 05:03:59
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999998
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned d875745f853f4e33aa3cf7074a71f3c2
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-05-15 08:30:33
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999997
+2024/03/04 14:31:57,577 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned 1c3d50be4c964c6383009642d8cb6d0e
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-01-15 18:41:09
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999996
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned cd68a14d4602ebd9480ef48564763c7e
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-02-06 20:23:11
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999995
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned 8769dfae4cd1944d789aa5d319bff825
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-08-07 11:40:28
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999994
+2024/03/04 14:31:57,578 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned 66bb0135eabeee1a140b060dc5aeb13a
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-08-25 11:23:47
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999993
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned 951abb491fb94bcdd41d9df9b496ee54
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-01-17 17:40:27
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999992
+2024/03/04 14:31:57,579 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned 4af9282a59552f0e3c099431e8e83cef
+2024/03/04 14:31:57,580 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-09-16 22:11:52
+2024/03/04 14:31:57,580 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,580 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned true
+2024/03/04 14:31:57,580 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getLong(id) returned 999991
+2024/03/04 14:31:57,580 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(content) returned a0c43bae2daf8e54dc6413e22f6a93bb
+2024/03/04 14:31:57,580 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.getString(created_at) returned 2023-09-13 03:24:00
+2024/03/04 14:31:57,580 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.isClosed() returned false
+2024/03/04 14:31:57,580 [INFO ] [j.resultsettable] [http-nio-8080-exec-8]- 
+|--------|----------------------------------------------------------------|--------------------|
+|id      |content                                                         |created_at          |
+|--------|----------------------------------------------------------------|--------------------|
+|1000000 |abcdefghijkalkdjf;laksjdf;lkasjd;flkjasd;lkfjas;ldkfja;slkdjf;a |2023-06-02 09:44:48 |
+|999999  |a769ace788e886f96cb08c6b3666f29a                                |2023-03-03 05:03:59 |
+|999998  |d875745f853f4e33aa3cf7074a71f3c2                                |2023-05-15 08:30:33 |
+|999997  |1c3d50be4c964c6383009642d8cb6d0e                                |2023-01-15 18:41:09 |
+|999996  |cd68a14d4602ebd9480ef48564763c7e                                |2023-02-06 20:23:11 |
+|999995  |8769dfae4cd1944d789aa5d319bff825                                |2023-08-07 11:40:28 |
+|999994  |66bb0135eabeee1a140b060dc5aeb13a                                |2023-08-25 11:23:47 |
+|999993  |951abb491fb94bcdd41d9df9b496ee54                                |2023-01-17 17:40:27 |
+|999992  |4af9282a59552f0e3c099431e8e83cef                                |2023-09-16 22:11:52 |
+|999991  |a0c43bae2daf8e54dc6413e22f6a93bb                                |2023-09-13 03:24:00 |
+|--------|----------------------------------------------------------------|--------------------|
+
+2024/03/04 14:31:57,581 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.next() returned false
+2024/03/04 14:31:57,581 [INFO ] [j.resultset] [http-nio-8080-exec-8]- 1. ResultSet.close() returned void
+2024/03/04 14:31:57,581 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@4af12a63
+2024/03/04 14:31:57,581 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.getMoreResults() returned false
+2024/03/04 14:31:57,581 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.getUpdateCount() returned -1
+2024/03/04 14:31:57,581 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. PreparedStatement.close() returned 
+2024/03/04 14:31:57,581 [INFO ] [j.audit] [http-nio-8080-exec-8]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:32:42,672 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 18116 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:32:42,679 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:32:43,215 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:32:43,256 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:32:43,603 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:32:43,608 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:32:43,609 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:32:43,610 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:32:43,708 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:32:43,708 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 995 ms
+2024/03/04 14:32:43,808 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:32:43,843 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:32:43,953 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:32:44,033 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:32:44,174 [INFO ] [j.connection] [main]- 1. Connection opened
+2024/03/04 14:32:44,174 [INFO ] [j.audit] [main]- 1. Connection.new Connection returned 
+2024/03/04 14:32:44,174 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:32:44,175 [INFO ] [j.audit] [main]- 1. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,175 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,178 [INFO ] [j.audit] [main]- 1. Connection.isValid(1) returned true
+2024/03/04 14:32:44,182 [INFO ] [j.audit] [main]- 1. Connection.getTransactionIsolation() returned 2
+2024/03/04 14:32:44,184 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:32:44,188 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@49e7e8f1
+2024/03/04 14:32:44,190 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@49e7e8f1
+2024/03/04 14:32:44,201 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:32:44,211 [INFO ] [j.audit] [main]- 1. Connection.getCatalog() returned postgres
+2024/03/04 14:32:44,214 [INFO ] [j.audit] [main]- 1. Statement.new Statement returned 
+2024/03/04 14:32:44,214 [INFO ] [j.audit] [main]- 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6d815fb7
+2024/03/04 14:32:44,216 [INFO ] [j.sqlonly] [main]- select current_schema()
+
+2024/03/04 14:32:44,217 [INFO ] [j.sqltiming] [main]- select current_schema()
+ {executed in 0 msec}
+2024/03/04 14:32:44,218 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:32:44,218 [INFO ] [j.audit] [main]- 1. Statement.executeQuery(select current_schema()) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@6ef1c3f7
+2024/03/04 14:32:44,220 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned true
+2024/03/04 14:32:44,221 [INFO ] [j.resultset] [main]- 1. ResultSet.getString(1) returned public
+2024/03/04 14:32:44,221 [INFO ] [j.resultsettable] [main]- 
+|---------------|
+|current_schema |
+|---------------|
+|public         |
+|---------------|
+
+2024/03/04 14:32:44,221 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:32:44,221 [INFO ] [j.audit] [main]- 1. Statement.close() returned 
+2024/03/04 14:32:44,224 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@49e7e8f1
+2024/03/04 14:32:44,226 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:32:44,373 [INFO ] [j.connection] [HikariPool-1 connection adder]- 2. Connection opened
+2024/03/04 14:32:44,373 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.new Connection returned 
+2024/03/04 14:32:44,373 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,373 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,452 [INFO ] [j.connection] [HikariPool-1 connection adder]- 3. Connection opened
+2024/03/04 14:32:44,452 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.new Connection returned 
+2024/03/04 14:32:44,452 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,452 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,529 [INFO ] [j.connection] [HikariPool-1 connection adder]- 4. Connection opened
+2024/03/04 14:32:44,529 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.new Connection returned 
+2024/03/04 14:32:44,529 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,529 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,606 [INFO ] [j.connection] [HikariPool-1 connection adder]- 5. Connection opened
+2024/03/04 14:32:44,606 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.new Connection returned 
+2024/03/04 14:32:44,606 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,606 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,635 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,637 [INFO ] [j.audit] [main]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:32:44,638 [INFO ] [j.audit] [main]- 1. Connection.prepareStatement(select * from information_schema.sequences) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@55f6f965
+2024/03/04 14:32:44,639 [INFO ] [j.sqlonly] [main]- select * from information_schema.sequences
+
+2024/03/04 14:32:44,646 [INFO ] [j.sqltiming] [main]- select * from information_schema.sequences
+ {executed in 7 msec}
+2024/03/04 14:32:44,646 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:32:44,646 [INFO ] [j.audit] [main]- 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@66a8751a
+2024/03/04 14:32:44,647 [INFO ] [j.resultsettable] [main]- 
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|sequence_catalog |sequence_schema |sequence_name |data_type |numeric_precision |numeric_precision_radix |numeric_scale |start_value |minimum_value |maximum_value |increment |cycle_option |
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+
+2024/03/04 14:32:44,647 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned false
+2024/03/04 14:32:44,647 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:32:44,647 [INFO ] [j.audit] [main]- 1. PreparedStatement.close() returned 
+2024/03/04 14:32:44,651 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@49e7e8f1
+2024/03/04 14:32:44,666 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:32:44,666 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:32:44,675 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:32:44,683 [INFO ] [j.connection] [HikariPool-1 connection adder]- 6. Connection opened
+2024/03/04 14:32:44,683 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.new Connection returned 
+2024/03/04 14:32:44,683 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,683 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,756 [INFO ] [j.connection] [HikariPool-1 connection adder]- 7. Connection opened
+2024/03/04 14:32:44,757 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.new Connection returned 
+2024/03/04 14:32:44,757 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,757 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,830 [INFO ] [j.connection] [HikariPool-1 connection adder]- 8. Connection opened
+2024/03/04 14:32:44,830 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.new Connection returned 
+2024/03/04 14:32:44,830 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,830 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,905 [INFO ] [j.connection] [HikariPool-1 connection adder]- 9. Connection opened
+2024/03/04 14:32:44,905 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.new Connection returned 
+2024/03/04 14:32:44,905 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,905 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.getAutoCommit() returned true
+2024/03/04 14:32:44,988 [INFO ] [j.connection] [HikariPool-1 connection adder]- 10. Connection opened
+2024/03/04 14:32:44,989 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.new Connection returned 
+2024/03/04 14:32:44,989 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.isReadOnly() returned false
+2024/03/04 14:32:44,989 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.getAutoCommit() returned true
+2024/03/04 14:32:45,130 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6885f3f7, org.springframework.security.web.header.HeaderWriterFilter@593354fa, org.springframework.security.web.csrf.CsrfFilter@6839d03b, org.springframework.security.web.authentication.logout.LogoutFilter@3c1df0e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58e7f930, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@392ef4ff, org.springframework.security.web.access.ExceptionTranslationFilter@261f5a45, org.springframework.security.web.access.intercept.AuthorizationFilter@f310675]
+2024/03/04 14:32:45,153 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c2be147, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dddcd91, org.springframework.security.web.context.SecurityContextPersistenceFilter@14bd523b, org.springframework.security.web.header.HeaderWriterFilter@33e6bd36, org.springframework.security.web.csrf.CsrfFilter@c49e434, org.springframework.security.web.authentication.logout.LogoutFilter@ca0a21f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45648e75, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8ce4320, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42012093, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21bd6fd1, org.springframework.security.web.session.SessionManagementFilter@2db6ba81, org.springframework.security.web.access.ExceptionTranslationFilter@32b1e906, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4536a09a]
+2024/03/04 14:32:45,192 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:32:45,293 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:32:45,432 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:32:45,459 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:32:45,467 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.139 seconds (JVM running for 3.993)
+2024/03/04 14:36:52,734 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 11452 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:36:52,740 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:36:53,329 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:36:53,377 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:36:53,772 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:36:53,777 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:36:53,779 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:36:53,779 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:36:53,908 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:36:53,908 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1135 ms
+2024/03/04 14:36:53,958 [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] [main]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+2024/03/04 14:36:53,960 [INFO ] [o.a.c.c.StandardService] [main]- Stopping service [Tomcat]
+2024/03/04 14:36:53,971 [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] [main]- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024/03/04 14:36:53,991 [ERROR] [o.s.b.SpringApplication] [main]- Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:919) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) [spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) [spring-boot-2.7.18.jar:2.7.18]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.31.jar:5.3.31]
+	... 21 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.31.jar:5.3.31]
+	... 21 more
+Caused by: java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	at org.springframework.util.Assert.state(Assert.java:97) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175) ~[spring-boot-autoconfigure-2.7.18.jar:2.7.18]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:125) ~[spring-boot-autoconfigure-2.7.18.jar:2.7.18]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-2.7.18.jar:2.7.18]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-2.7.18.jar:2.7.18]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.31.jar:5.3.31]
+	... 21 more
+2024/03/04 14:37:09,077 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 21068 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:37:09,085 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:37:09,667 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:37:09,721 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:37:10,132 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:37:10,138 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:37:10,139 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:37:10,139 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:37:10,252 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:37:10,253 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1135 ms
+2024/03/04 14:37:10,302 [WARN ] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] [main]- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+2024/03/04 14:37:10,304 [INFO ] [o.a.c.c.StandardService] [main]- Stopping service [Tomcat]
+2024/03/04 14:37:10,315 [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] [main]- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024/03/04 14:37:10,333 [ERROR] [o.s.b.SpringApplication] [main]- Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:919) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) ~[spring-context-5.3.31.jar:5.3.31]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) [spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409) [spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) [spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) [spring-boot-2.7.18.jar:2.7.18]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289) [spring-boot-2.7.18.jar:2.7.18]
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.31.jar:5.3.31]
+	... 21 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.31.jar:5.3.31]
+	... 21 more
+Caused by: java.lang.IllegalStateException: Cannot load driver class: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	at org.springframework.util.Assert.state(Assert.java:97) ~[spring-core-5.3.31.jar:5.3.31]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175) ~[spring-boot-autoconfigure-2.7.18.jar:2.7.18]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:125) ~[spring-boot-autoconfigure-2.7.18.jar:2.7.18]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48) ~[spring-boot-autoconfigure-2.7.18.jar:2.7.18]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90) ~[spring-boot-autoconfigure-2.7.18.jar:2.7.18]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-5.3.31.jar:5.3.31]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.3.31.jar:5.3.31]
+	... 21 more
+2024/03/04 14:44:00,311 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 43184 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:44:00,318 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:44:00,859 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:44:00,902 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:44:01,302 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:44:01,307 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:44:01,308 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:44:01,309 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:44:01,429 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:44:01,429 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1072 ms
+2024/03/04 14:44:01,552 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:44:01,590 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:44:01,710 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:44:01,806 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:44:01,951 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:44:01,970 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:44:02,441 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:44:02,451 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:44:02,914 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4714f447, org.springframework.security.web.header.HeaderWriterFilter@5b028f58, org.springframework.security.web.csrf.CsrfFilter@32e5fb4c, org.springframework.security.web.authentication.logout.LogoutFilter@41c88e00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46c2189e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c1df0e9, org.springframework.security.web.access.ExceptionTranslationFilter@6be1f37f, org.springframework.security.web.access.intercept.AuthorizationFilter@7771c4e]
+2024/03/04 14:44:02,933 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69e8b711, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@764a3867, org.springframework.security.web.context.SecurityContextPersistenceFilter@16c9f7f0, org.springframework.security.web.header.HeaderWriterFilter@29d33f1, org.springframework.security.web.csrf.CsrfFilter@3713bedc, org.springframework.security.web.authentication.logout.LogoutFilter@1055d261, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@fc21ff4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d75940, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e5cbcfe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d99df7a, org.springframework.security.web.session.SessionManagementFilter@5daa621b, org.springframework.security.web.access.ExceptionTranslationFilter@198c0f1c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b1d2f65]
+2024/03/04 14:44:02,965 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:44:03,065 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:44:03,205 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:44:03,233 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:44:03,240 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.324 seconds (JVM running for 4.171)
+2024/03/04 14:44:07,539 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:44:07,540 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Initializing Servlet 'dispatcherServlet'
+2024/03/04 14:44:07,541 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Completed initialization in 1 ms
+2024/03/04 14:44:07,586 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ==== gdgd ====
+2024/03/04 14:45:03,832 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 13812 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:45:03,839 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:45:04,391 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:45:04,444 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:45:04,850 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:45:04,856 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:45:04,857 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:45:04,858 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:45:04,977 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:45:04,977 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1109 ms
+2024/03/04 14:45:05,103 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:45:05,146 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:45:05,276 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:45:05,370 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:45:05,518 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:45:05,535 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:45:05,989 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:45:06,000 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:45:06,442 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4714f447, org.springframework.security.web.header.HeaderWriterFilter@5b028f58, org.springframework.security.web.csrf.CsrfFilter@11a7840f, org.springframework.security.web.authentication.logout.LogoutFilter@41c88e00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46c2189e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c1df0e9, org.springframework.security.web.access.ExceptionTranslationFilter@69ed96e1, org.springframework.security.web.access.intercept.AuthorizationFilter@7771c4e]
+2024/03/04 14:45:06,462 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69e8b711, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@764a3867, org.springframework.security.web.context.SecurityContextPersistenceFilter@16c9f7f0, org.springframework.security.web.header.HeaderWriterFilter@29d33f1, org.springframework.security.web.csrf.CsrfFilter@3713bedc, org.springframework.security.web.authentication.logout.LogoutFilter@1055d261, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@fc21ff4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d75940, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e5cbcfe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d99df7a, org.springframework.security.web.session.SessionManagementFilter@5daa621b, org.springframework.security.web.access.ExceptionTranslationFilter@198c0f1c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b1d2f65]
+2024/03/04 14:45:06,490 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:45:06,579 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:45:06,697 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:45:06,722 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:45:06,731 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.209 seconds (JVM running for 3.999)
+2024/03/04 14:45:09,905 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-2]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:45:09,906 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-2]- Initializing Servlet 'dispatcherServlet'
+2024/03/04 14:45:09,907 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-2]- Completed initialization in 1 ms
+2024/03/04 14:45:09,952 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-2]- ==== gdgd ====
+2024/03/04 14:45:27,015 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 45572 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:45:27,021 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:45:27,541 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:45:27,592 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:45:27,989 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:45:27,995 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:45:27,996 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:45:27,996 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:45:28,109 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:45:28,110 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1060 ms
+2024/03/04 14:45:28,225 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:45:28,262 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:45:28,369 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:45:28,458 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:45:28,611 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:45:28,627 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:45:29,111 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:45:29,119 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:45:29,567 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64e3bc2, org.springframework.security.web.header.HeaderWriterFilter@3ac326c0, org.springframework.security.web.csrf.CsrfFilter@66d69cd2, org.springframework.security.web.authentication.logout.LogoutFilter@62f305bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d1b43d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54ed249f, org.springframework.security.web.access.ExceptionTranslationFilter@44e3f3e5, org.springframework.security.web.access.intercept.AuthorizationFilter@39296cef]
+2024/03/04 14:45:29,586 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58647985, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e1c91cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@24a7725d, org.springframework.security.web.header.HeaderWriterFilter@3713bedc, org.springframework.security.web.csrf.CsrfFilter@3465edf9, org.springframework.security.web.authentication.logout.LogoutFilter@3e5cbcfe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42028589, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16c9f7f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@187df588, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69e8b711, org.springframework.security.web.session.SessionManagementFilter@29d33f1, org.springframework.security.web.access.ExceptionTranslationFilter@51c4992e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cda75be]
+2024/03/04 14:45:29,614 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:45:29,706 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:45:29,836 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:45:29,863 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:45:29,870 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.183 seconds (JVM running for 4.007)
+2024/03/04 14:45:33,235 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:45:33,235 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Initializing Servlet 'dispatcherServlet'
+2024/03/04 14:45:33,236 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Completed initialization in 1 ms
+2024/03/04 14:45:33,280 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ==== gdgd ====
+2024/03/04 14:45:38,749 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-8]- ==== gdgd ====
+2024/03/04 14:45:57,629 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 28696 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:45:57,636 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:45:58,204 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:45:58,251 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:45:58,622 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:45:58,628 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:45:58,629 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:45:58,629 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:45:58,757 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:45:58,757 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1089 ms
+2024/03/04 14:45:58,885 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:45:58,923 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:45:59,041 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:45:59,133 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:45:59,283 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:45:59,304 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:45:59,764 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:45:59,772 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:46:00,320 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f310675, org.springframework.security.web.header.HeaderWriterFilter@2570851e, org.springframework.security.web.csrf.CsrfFilter@42d7e8bc, org.springframework.security.web.authentication.logout.LogoutFilter@113a6636, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76673ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@424ec990, org.springframework.security.web.access.ExceptionTranslationFilter@46c2189e, org.springframework.security.web.access.intercept.AuthorizationFilter@3c1df0e9]
+2024/03/04 14:46:00,344 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58932d08, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45648e75, org.springframework.security.web.context.SecurityContextPersistenceFilter@c49e434, org.springframework.security.web.header.HeaderWriterFilter@3e5cbcfe, org.springframework.security.web.csrf.CsrfFilter@187df588, org.springframework.security.web.authentication.logout.LogoutFilter@10728fe8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6cb3463b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33e6bd36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e1d9b32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e344f14, org.springframework.security.web.session.SessionManagementFilter@1055d261, org.springframework.security.web.access.ExceptionTranslationFilter@7d75940, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69e8b711]
+2024/03/04 14:46:00,374 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:46:00,490 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:46:00,640 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:46:00,666 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:46:00,674 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.424 seconds (JVM running for 4.286)
+2024/03/04 14:46:04,317 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:46:04,317 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Initializing Servlet 'dispatcherServlet'
+2024/03/04 14:46:04,318 [INFO ] [o.s.w.s.DispatcherServlet] [http-nio-8080-exec-1]- Completed initialization in 0 ms
+2024/03/04 14:46:04,360 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ==== gdgd ====
+2024/03/04 14:46:06,600 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-3]- ==== gdgd ====
+2024/03/04 14:46:51,662 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 15488 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:46:51,667 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:46:52,196 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:46:52,244 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:46:52,621 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:46:52,627 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:46:52,628 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:46:52,629 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:46:52,750 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:46:52,750 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1050 ms
+2024/03/04 14:46:52,869 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:46:52,907 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:46:53,027 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:46:53,264 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:46:53,288 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:46:53,306 [DEBUG] [j.sqltiming] [main]-  com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+1. select current_schema()
+ {executed in 1 msec}
+2024/03/04 14:46:53,740 [DEBUG] [j.sqltiming] [main]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select * from information_schema.sequences
+ {executed in 5 msec}
+2024/03/04 14:46:53,759 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:46:53,768 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:46:54,184 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f95158a, org.springframework.security.web.header.HeaderWriterFilter@84becbe, org.springframework.security.web.csrf.CsrfFilter@354e2bff, org.springframework.security.web.authentication.logout.LogoutFilter@647aa45c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ed7c178, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31fc658f, org.springframework.security.web.access.ExceptionTranslationFilter@424ec990, org.springframework.security.web.access.intercept.AuthorizationFilter@28ceb25e]
+2024/03/04 14:46:54,201 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f5f7731, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a4f7c17, org.springframework.security.web.context.SecurityContextPersistenceFilter@33563147, org.springframework.security.web.header.HeaderWriterFilter@3c2188f, org.springframework.security.web.csrf.CsrfFilter@1af6974c, org.springframework.security.web.authentication.logout.LogoutFilter@261b6c8c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4a8bf1dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19c24321, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ba27ce6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@584fb03d, org.springframework.security.web.session.SessionManagementFilter@4a094f90, org.springframework.security.web.access.ExceptionTranslationFilter@61d61b0e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46d18a33]
+2024/03/04 14:46:54,226 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:46:54,317 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:46:54,444 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:46:54,470 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:46:54,477 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.156 seconds (JVM running for 3.975)
+2024/03/04 14:47:01,734 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:47:01,772 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ==== gdgd ====
+2024/03/04 14:47:02,216 [DEBUG] [j.sqltiming] [http-nio-8080-exec-9]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 116 msec}
+2024/03/04 14:47:02,226 [DEBUG] [j.sqltiming] [http-nio-8080-exec-9]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+ {executed in 1 msec}
+2024/03/04 14:47:10,402 [DEBUG] [j.sqltiming] [http-nio-8080-exec-3]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 103 msec}
+2024/03/04 14:47:10,403 [DEBUG] [j.sqltiming] [http-nio-8080-exec-3]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 10
+ {executed in 0 msec}

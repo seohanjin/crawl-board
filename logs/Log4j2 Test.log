@@ -1,0 +1,314 @@
+2024/03/04 14:38:16,628 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 21496 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:38:16,635 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:38:17,265 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:38:17,312 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:38:17,731 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:38:17,738 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:38:17,740 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:38:17,741 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:38:17,869 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:38:17,869 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1200 ms
+2024/03/04 14:38:17,986 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:38:18,026 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:38:18,146 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:38:18,241 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Starting...
+2024/03/04 14:38:18,377 [INFO ] [j.connection] [main]- 1. Connection opened
+2024/03/04 14:38:18,377 [INFO ] [j.audit] [main]- 1. Connection.new Connection returned 
+2024/03/04 14:38:18,377 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:38:18,378 [INFO ] [j.audit] [main]- 1. Connection.isReadOnly() returned false
+2024/03/04 14:38:18,378 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:38:18,381 [INFO ] [j.audit] [main]- 1. Connection.isValid(1) returned true
+2024/03/04 14:38:18,384 [INFO ] [j.audit] [main]- 1. Connection.getTransactionIsolation() returned 2
+2024/03/04 14:38:18,387 [INFO ] [c.z.h.HikariDataSource] [main]- HikariPool-1 - Start completed.
+2024/03/04 14:38:18,391 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@49e7e8f1
+2024/03/04 14:38:18,392 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@49e7e8f1
+2024/03/04 14:38:18,403 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:38:18,415 [INFO ] [j.audit] [main]- 1. Connection.getCatalog() returned postgres
+2024/03/04 14:38:18,417 [INFO ] [j.audit] [main]- 1. Statement.new Statement returned 
+2024/03/04 14:38:18,417 [INFO ] [j.audit] [main]- 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@6d815fb7
+2024/03/04 14:38:18,420 [INFO ] [j.sqlonly] [main]- select current_schema()
+
+2024/03/04 14:38:18,420 [INFO ] [j.sqltiming] [main]- select current_schema()
+ {executed in 0 msec}
+2024/03/04 14:38:18,423 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:38:18,423 [INFO ] [j.audit] [main]- 1. Statement.executeQuery(select current_schema()) returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@6ef1c3f7
+2024/03/04 14:38:18,424 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned true
+2024/03/04 14:38:18,424 [INFO ] [j.resultset] [main]- 1. ResultSet.getString(1) returned public
+2024/03/04 14:38:18,425 [INFO ] [j.resultsettable] [main]- 
+|---------------|
+|current_schema |
+|---------------|
+|public         |
+|---------------|
+
+2024/03/04 14:38:18,425 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:38:18,425 [INFO ] [j.audit] [main]- 1. Statement.close() returned 
+2024/03/04 14:38:18,428 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@49e7e8f1
+2024/03/04 14:38:18,431 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:38:18,572 [INFO ] [j.connection] [HikariPool-1 connection adder]- 2. Connection opened
+2024/03/04 14:38:18,572 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.new Connection returned 
+2024/03/04 14:38:18,572 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.isReadOnly() returned false
+2024/03/04 14:38:18,572 [INFO ] [j.audit] [HikariPool-1 connection adder]- 2. Connection.getAutoCommit() returned true
+2024/03/04 14:38:18,646 [INFO ] [j.connection] [HikariPool-1 connection adder]- 3. Connection opened
+2024/03/04 14:38:18,646 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.new Connection returned 
+2024/03/04 14:38:18,646 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.isReadOnly() returned false
+2024/03/04 14:38:18,646 [INFO ] [j.audit] [HikariPool-1 connection adder]- 3. Connection.getAutoCommit() returned true
+2024/03/04 14:38:18,719 [INFO ] [j.connection] [HikariPool-1 connection adder]- 4. Connection opened
+2024/03/04 14:38:18,719 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.new Connection returned 
+2024/03/04 14:38:18,719 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.isReadOnly() returned false
+2024/03/04 14:38:18,719 [INFO ] [j.audit] [HikariPool-1 connection adder]- 4. Connection.getAutoCommit() returned true
+2024/03/04 14:38:18,791 [INFO ] [j.connection] [HikariPool-1 connection adder]- 5. Connection opened
+2024/03/04 14:38:18,792 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.new Connection returned 
+2024/03/04 14:38:18,792 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.isReadOnly() returned false
+2024/03/04 14:38:18,792 [INFO ] [j.audit] [HikariPool-1 connection adder]- 5. Connection.getAutoCommit() returned true
+2024/03/04 14:38:18,825 [INFO ] [j.audit] [main]- 1. Connection.getAutoCommit() returned true
+2024/03/04 14:38:18,827 [INFO ] [j.audit] [main]- 1. PreparedStatement.new PreparedStatement returned 
+2024/03/04 14:38:18,827 [INFO ] [j.audit] [main]- 1. Connection.prepareStatement(select * from information_schema.sequences) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@55f6f965
+2024/03/04 14:38:18,829 [INFO ] [j.sqlonly] [main]- select * from information_schema.sequences
+
+2024/03/04 14:38:18,837 [INFO ] [j.sqltiming] [main]- select * from information_schema.sequences
+ {executed in 8 msec}
+2024/03/04 14:38:18,837 [INFO ] [j.resultset] [main]- 1. ResultSet.new ResultSet returned 
+2024/03/04 14:38:18,837 [INFO ] [j.audit] [main]- 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@66a8751a
+2024/03/04 14:38:18,838 [INFO ] [j.resultsettable] [main]- 
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|sequence_catalog |sequence_schema |sequence_name |data_type |numeric_precision |numeric_precision_radix |numeric_scale |start_value |minimum_value |maximum_value |increment |cycle_option |
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+|-----------------|----------------|--------------|----------|------------------|------------------------|--------------|------------|--------------|--------------|----------|-------------|
+
+2024/03/04 14:38:18,839 [INFO ] [j.resultset] [main]- 1. ResultSet.next() returned false
+2024/03/04 14:38:18,839 [INFO ] [j.resultset] [main]- 1. ResultSet.close() returned void
+2024/03/04 14:38:18,839 [INFO ] [j.audit] [main]- 1. PreparedStatement.close() returned 
+2024/03/04 14:38:18,842 [INFO ] [j.audit] [main]- 1. Connection.getMetaData() returned org.postgresql.jdbc.PgDatabaseMetaData@49e7e8f1
+2024/03/04 14:38:18,859 [INFO ] [j.audit] [main]- 1. Connection.clearWarnings() returned 
+2024/03/04 14:38:18,859 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:38:18,868 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:38:18,869 [INFO ] [j.connection] [HikariPool-1 connection adder]- 6. Connection opened
+2024/03/04 14:38:18,869 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.new Connection returned 
+2024/03/04 14:38:18,869 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.isReadOnly() returned false
+2024/03/04 14:38:18,869 [INFO ] [j.audit] [HikariPool-1 connection adder]- 6. Connection.getAutoCommit() returned true
+2024/03/04 14:38:18,944 [INFO ] [j.connection] [HikariPool-1 connection adder]- 7. Connection opened
+2024/03/04 14:38:18,944 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.new Connection returned 
+2024/03/04 14:38:18,944 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.isReadOnly() returned false
+2024/03/04 14:38:18,944 [INFO ] [j.audit] [HikariPool-1 connection adder]- 7. Connection.getAutoCommit() returned true
+2024/03/04 14:38:19,021 [INFO ] [j.connection] [HikariPool-1 connection adder]- 8. Connection opened
+2024/03/04 14:38:19,021 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.new Connection returned 
+2024/03/04 14:38:19,021 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.isReadOnly() returned false
+2024/03/04 14:38:19,021 [INFO ] [j.audit] [HikariPool-1 connection adder]- 8. Connection.getAutoCommit() returned true
+2024/03/04 14:38:19,096 [INFO ] [j.connection] [HikariPool-1 connection adder]- 9. Connection opened
+2024/03/04 14:38:19,097 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.new Connection returned 
+2024/03/04 14:38:19,097 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.isReadOnly() returned false
+2024/03/04 14:38:19,097 [INFO ] [j.audit] [HikariPool-1 connection adder]- 9. Connection.getAutoCommit() returned true
+2024/03/04 14:38:19,174 [INFO ] [j.connection] [HikariPool-1 connection adder]- 10. Connection opened
+2024/03/04 14:38:19,174 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.new Connection returned 
+2024/03/04 14:38:19,175 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.isReadOnly() returned false
+2024/03/04 14:38:19,175 [INFO ] [j.audit] [HikariPool-1 connection adder]- 10. Connection.getAutoCommit() returned true
+2024/03/04 14:38:19,317 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@84becbe, org.springframework.security.web.header.HeaderWriterFilter@6d41200c, org.springframework.security.web.csrf.CsrfFilter@58945295, org.springframework.security.web.authentication.logout.LogoutFilter@54ed249f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9dbb1d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13dc383b, org.springframework.security.web.access.ExceptionTranslationFilter@67d8613, org.springframework.security.web.access.intercept.AuthorizationFilter@5c16561a]
+2024/03/04 14:38:19,337 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e344f14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d117280, org.springframework.security.web.context.SecurityContextPersistenceFilter@10728fe8, org.springframework.security.web.header.HeaderWriterFilter@c49e434, org.springframework.security.web.csrf.CsrfFilter@2d758472, org.springframework.security.web.authentication.logout.LogoutFilter@42012093, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28d16af8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14bd523b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cc7909f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c2be147, org.springframework.security.web.session.SessionManagementFilter@33e6bd36, org.springframework.security.web.access.ExceptionTranslationFilter@7615666e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cb3463b]
+2024/03/04 14:38:19,363 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:38:19,452 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:38:19,599 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:38:19,628 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:38:19,637 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.332 seconds (JVM running for 4.146)
+2024/03/04 14:54:08,950 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 14692 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:54:08,956 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:54:09,522 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:54:09,566 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:54:09,940 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:54:09,945 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:54:09,946 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:54:09,946 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:54:10,050 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:54:10,050 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1059 ms
+2024/03/04 14:54:10,169 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:54:10,213 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:54:10,340 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:54:10,565 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:54:10,589 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:54:10,604 [DEBUG] [j.sqltiming] [main]-  com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+1. select current_schema()
+ {executed in 1 msec}
+2024/03/04 14:54:11,022 [DEBUG] [j.sqltiming] [main]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select * from information_schema.sequences
+ {executed in 8 msec}
+2024/03/04 14:54:11,039 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:54:11,048 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:54:11,515 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@647aa45c, org.springframework.security.web.header.HeaderWriterFilter@54ed249f, org.springframework.security.web.csrf.CsrfFilter@1bb0fa38, org.springframework.security.web.authentication.logout.LogoutFilter@3294102e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@768e40af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3922b297, org.springframework.security.web.access.ExceptionTranslationFilter@63062eea, org.springframework.security.web.access.intercept.AuthorizationFilter@1e836aed]
+2024/03/04 14:54:11,535 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@728535c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@244f356, org.springframework.security.web.context.SecurityContextPersistenceFilter@7491cdae, org.springframework.security.web.header.HeaderWriterFilter@19d13d04, org.springframework.security.web.csrf.CsrfFilter@6655f3cd, org.springframework.security.web.authentication.logout.LogoutFilter@25b8f9d2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3538a129, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c7a06ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@697b48e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19855799, org.springframework.security.web.session.SessionManagementFilter@7957aa57, org.springframework.security.web.access.ExceptionTranslationFilter@2484c868, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c9c91e3]
+2024/03/04 14:54:11,567 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:54:11,662 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:54:11,790 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:54:11,817 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:54:11,826 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.239 seconds (JVM running for 4.124)
+2024/03/04 14:55:16,401 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 34376 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:55:16,407 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:55:16,926 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:55:16,968 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:55:17,333 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:55:17,339 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:55:17,339 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:55:17,340 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:55:17,460 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:55:17,461 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1022 ms
+2024/03/04 14:55:17,576 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:55:17,615 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:55:17,733 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:55:17,967 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:55:17,993 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:55:18,009 [DEBUG] [j.sqltiming] [main]-  com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+1. select current_schema()
+ {executed in 0 msec}
+2024/03/04 14:55:18,453 [DEBUG] [j.sqltiming] [main]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select * from information_schema.sequences
+ {executed in 8 msec}
+2024/03/04 14:55:18,478 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:55:18,487 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:55:18,961 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@518a7b8a, org.springframework.security.web.header.HeaderWriterFilter@f310675, org.springframework.security.web.csrf.CsrfFilter@1ff23bd1, org.springframework.security.web.authentication.logout.LogoutFilter@8dedec8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c7db0e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a24390b, org.springframework.security.web.access.ExceptionTranslationFilter@165824f5, org.springframework.security.web.access.intercept.AuthorizationFilter@2d02a066]
+2024/03/04 14:55:18,984 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3065efd0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7aaf6bfd, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c2188f, org.springframework.security.web.header.HeaderWriterFilter@137d04d8, org.springframework.security.web.csrf.CsrfFilter@5c7a06ec, org.springframework.security.web.authentication.logout.LogoutFilter@33563147, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46d18a33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a094f90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b5623b4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a8bf1dc, org.springframework.security.web.session.SessionManagementFilter@2979c6ef, org.springframework.security.web.access.ExceptionTranslationFilter@697b48e4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@244f356]
+2024/03/04 14:55:19,014 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:55:19,120 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:55:19,259 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:55:19,287 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:55:19,296 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.262 seconds (JVM running for 4.184)
+2024/03/04 14:55:25,444 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:55:25,485 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ==== gdgd ====
+2024/03/04 14:55:25,955 [DEBUG] [j.sqltiming] [http-nio-8080-exec-7]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 131 msec}
+2024/03/04 14:55:25,967 [DEBUG] [j.sqltiming] [http-nio-8080-exec-7]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+ {executed in 2 msec}
+2024/03/04 14:58:28,942 [INFO ] [c.e.d.DemoApplication] [main]- Starting DemoApplication using Java 14.0.2 on LAPTOP-BQH3ACND with PID 22460 (C:\crawl-board\crawl-board\out\production\classes started by seohanjin in C:\crawl-board\crawl-board)
+2024/03/04 14:58:28,948 [INFO ] [c.e.d.DemoApplication] [main]- No active profile set, falling back to 1 default profile: "default"
+2024/03/04 14:58:29,533 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024/03/04 14:58:29,578 [INFO ] [o.s.d.r.c.RepositoryConfigurationDelegate] [main]- Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
+2024/03/04 14:58:29,958 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat initialized with port(s): 8080 (http)
+2024/03/04 14:58:29,964 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Initializing ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:58:29,965 [INFO ] [o.a.c.c.StandardService] [main]- Starting service [Tomcat]
+2024/03/04 14:58:29,965 [INFO ] [o.a.c.c.StandardEngine] [main]- Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024/03/04 14:58:30,079 [INFO ] [o.a.c.c.C.[.[.[/]] [main]- Initializing Spring embedded WebApplicationContext
+2024/03/04 14:58:30,079 [INFO ] [o.s.b.w.s.c.ServletWebServerApplicationContext] [main]- Root WebApplicationContext: initialization completed in 1095 ms
+2024/03/04 14:58:30,183 [INFO ] [o.h.j.i.u.LogHelper] [main]- HHH000204: Processing PersistenceUnitInfo [name: default]
+2024/03/04 14:58:30,222 [INFO ] [o.h.Version] [main]- HHH000412: Hibernate ORM core version 5.6.15.Final
+2024/03/04 14:58:30,350 [INFO ] [o.h.a.c.Version] [main]- HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024/03/04 14:58:30,559 [INFO ] [c.z.h.p.PoolBase] [main]- HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2024/03/04 14:58:30,582 [INFO ] [o.h.d.Dialect] [main]- HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024/03/04 14:58:30,597 [DEBUG] [j.sqltiming] [main]-  com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+1. select current_schema()
+ {executed in 0 msec}
+2024/03/04 14:58:31,014 [DEBUG] [j.sqltiming] [main]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select * from information_schema.sequences
+ {executed in 11 msec}
+2024/03/04 14:58:31,035 [INFO ] [o.h.e.t.j.p.i.JtaPlatformInitiator] [main]- HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024/03/04 14:58:31,044 [INFO ] [o.s.o.j.LocalContainerEntityManagerFactoryBean] [main]- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024/03/04 14:58:31,523 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure Or [Ant [pattern='/css/**'], Ant [pattern='/img/**'], Ant [pattern='/js/**'], Ant [pattern='/vendor/**'], Ant [pattern='/scss/**'], Ant [pattern='/img/**']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c382179, org.springframework.security.web.header.HeaderWriterFilter@1bb0fa38, org.springframework.security.web.csrf.CsrfFilter@627d5f99, org.springframework.security.web.authentication.logout.LogoutFilter@165824f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@89465d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b657342, org.springframework.security.web.access.ExceptionTranslationFilter@522fb69, org.springframework.security.web.access.intercept.AuthorizationFilter@3b780b5c]
+2024/03/04 14:58:31,545 [INFO ] [o.s.s.w.DefaultSecurityFilterChain] [main]- Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79e9c14, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@340c7479, org.springframework.security.web.context.SecurityContextPersistenceFilter@42012093, org.springframework.security.web.header.HeaderWriterFilter@10728fe8, org.springframework.security.web.csrf.CsrfFilter@6e1d9b32, org.springframework.security.web.authentication.logout.LogoutFilter@1d432d56, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c2be147, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ca0a21f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@768d27e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@575e862c, org.springframework.security.web.session.SessionManagementFilter@14bd523b, org.springframework.security.web.access.ExceptionTranslationFilter@2db6ba81, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28d16af8]
+2024/03/04 14:58:31,573 [WARN ] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] [main]- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024/03/04 14:58:31,682 [INFO ] [o.s.b.a.w.s.WelcomePageHandlerMapping] [main]- Adding welcome page template: index
+2024/03/04 14:58:31,828 [INFO ] [o.a.c.h.Http11NioProtocol] [main]- Starting ProtocolHandler ["http-nio-8080"]
+2024/03/04 14:58:31,855 [INFO ] [o.s.b.w.e.t.TomcatWebServer] [main]- Tomcat started on port(s): 8080 (http) with context path ''
+2024/03/04 14:58:31,864 [INFO ] [c.e.d.DemoApplication] [main]- Started DemoApplication in 3.274 seconds (JVM running for 4.097)
+2024/03/04 14:59:29,818 [INFO ] [o.a.c.c.C.[.[.[/]] [http-nio-8080-exec-1]- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024/03/04 14:59:29,872 [INFO ] [c.e.d.c.CrawlLogController] [http-nio-8080-exec-1]- ==== gdgd ====
+2024/03/04 14:59:30,316 [DEBUG] [j.sqltiming] [http-nio-8080-exec-5]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 119 msec}
+2024/03/04 14:59:30,327 [DEBUG] [j.sqltiming] [http-nio-8080-exec-5]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 0
+ {executed in 2 msec}
+2024/03/04 14:59:34,605 [DEBUG] [j.sqltiming] [http-nio-8080-exec-3]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 107 msec}
+2024/03/04 14:59:34,606 [DEBUG] [j.sqltiming] [http-nio-8080-exec-3]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 10
+ {executed in 1 msec}
+2024/03/04 14:59:35,654 [DEBUG] [j.sqltiming] [http-nio-8080-exec-7]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 101 msec}
+2024/03/04 14:59:35,655 [DEBUG] [j.sqltiming] [http-nio-8080-exec-7]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 20
+ {executed in 0 msec}
+2024/03/04 14:59:41,524 [DEBUG] [j.sqltiming] [http-nio-8080-exec-10]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 115 msec}
+2024/03/04 14:59:41,526 [DEBUG] [j.sqltiming] [http-nio-8080-exec-10]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 30
+ {executed in 1 msec}
+2024/03/04 14:59:43,220 [DEBUG] [j.sqltiming] [http-nio-8080-exec-8]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 81 msec}
+2024/03/04 14:59:43,221 [DEBUG] [j.sqltiming] [http-nio-8080-exec-8]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 40
+ {executed in 1 msec}
+2024/03/04 14:59:43,956 [DEBUG] [j.sqltiming] [http-nio-8080-exec-6]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 92 msec}
+2024/03/04 14:59:43,957 [DEBUG] [j.sqltiming] [http-nio-8080-exec-6]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 50
+ {executed in 0 msec}
+2024/03/04 14:59:45,308 [DEBUG] [j.sqltiming] [http-nio-8080-exec-9]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 83 msec}
+2024/03/04 14:59:45,309 [DEBUG] [j.sqltiming] [http-nio-8080-exec-9]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 60
+ {executed in 0 msec}
+2024/03/04 14:59:45,721 [DEBUG] [j.sqltiming] [http-nio-8080-exec-1]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 104 msec}
+2024/03/04 14:59:45,723 [DEBUG] [j.sqltiming] [http-nio-8080-exec-1]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 70
+ {executed in 2 msec}
+2024/03/04 14:59:45,978 [DEBUG] [j.sqltiming] [http-nio-8080-exec-4]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 113 msec}
+2024/03/04 14:59:45,979 [DEBUG] [j.sqltiming] [http-nio-8080-exec-4]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 80
+ {executed in 0 msec}
+2024/03/04 14:59:46,218 [DEBUG] [j.sqltiming] [http-nio-8080-exec-2]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 98 msec}
+2024/03/04 14:59:46,219 [DEBUG] [j.sqltiming] [http-nio-8080-exec-2]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 90
+ {executed in 1 msec}
+2024/03/04 14:59:46,563 [DEBUG] [j.sqltiming] [http-nio-8080-exec-5]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 113 msec}
+2024/03/04 14:59:46,564 [DEBUG] [j.sqltiming] [http-nio-8080-exec-5]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 100
+ {executed in 1 msec}
+2024/03/04 14:59:47,283 [DEBUG] [j.sqltiming] [http-nio-8080-exec-3]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 113 msec}
+2024/03/04 14:59:47,284 [DEBUG] [j.sqltiming] [http-nio-8080-exec-3]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 110
+ {executed in 1 msec}
+2024/03/04 14:59:47,600 [DEBUG] [j.sqltiming] [http-nio-8080-exec-7]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 103 msec}
+2024/03/04 14:59:47,601 [DEBUG] [j.sqltiming] [http-nio-8080-exec-7]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 120
+ {executed in 1 msec}
+2024/03/04 14:59:47,919 [DEBUG] [j.sqltiming] [http-nio-8080-exec-10]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 103 msec}
+2024/03/04 14:59:47,920 [DEBUG] [j.sqltiming] [http-nio-8080-exec-10]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 130
+ {executed in 1 msec}
+2024/03/04 14:59:48,254 [DEBUG] [j.sqltiming] [http-nio-8080-exec-8]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 101 msec}
+2024/03/04 14:59:48,255 [DEBUG] [j.sqltiming] [http-nio-8080-exec-8]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 140
+ {executed in 1 msec}
+2024/03/04 14:59:48,588 [DEBUG] [j.sqltiming] [http-nio-8080-exec-6]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 99 msec}
+2024/03/04 14:59:48,589 [DEBUG] [j.sqltiming] [http-nio-8080-exec-6]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 150
+ {executed in 1 msec}
+2024/03/04 14:59:48,919 [DEBUG] [j.sqltiming] [http-nio-8080-exec-9]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select count(1) as tot_cnt from crawl_log cl
+ {executed in 111 msec}
+2024/03/04 14:59:48,920 [DEBUG] [j.sqltiming] [http-nio-8080-exec-9]-  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. select id, content, to_char(created_at, 'YYYY-MM-DD HH24:MI:SS') as created_at from crawl_log cl order by id desc limit 10 offset 160
+ {executed in 0 msec}

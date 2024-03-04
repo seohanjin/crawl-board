@@ -1,4 +1,4 @@
-package com.example.demo.Entity;
+package com.example.demo.Entity.user;
 
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -18,6 +18,7 @@ public class Account{
     @Id
     private String userId;
     private String userPw;
+    private String agency;
     private String role;
 
     @Builder

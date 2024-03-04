@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package com.example.demo.dto.crawl;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +14,7 @@ public class CrawlLogDto {
 
     private Long Id;
     private String content;
-    private LocalDateTime createdAt;
+    private String createdAt;
 
     private int totCnt;
     private int currentPageNum;

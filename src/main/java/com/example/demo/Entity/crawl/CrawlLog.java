@@ -1,4 +1,4 @@
-package com.example.demo.Entity;
+package com.example.demo.Entity.crawl;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -17,7 +17,7 @@ public class CrawlLog{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 
-    @Lob
+    @Column(nullable = false, columnDefinition="TEXT")
     private String content;
     private LocalDateTime createdAt;
 

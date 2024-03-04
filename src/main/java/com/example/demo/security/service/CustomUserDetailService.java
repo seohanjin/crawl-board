@@ -1,7 +1,7 @@
 package com.example.demo.security.service;
 
-import com.example.demo.Entity.Account;
-import com.example.demo.repository.UserRepository;
+import com.example.demo.Entity.user.Account;
+import com.example.demo.repository.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.GrantedAuthority;

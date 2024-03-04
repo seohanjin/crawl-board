@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.authentication.AuthenticationDetailsSource;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -33,21 +34,41 @@ public class SecurityConfig {
         return accessDeniedHandler;
     }
 
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+//    }
+
+    /*
+        정적파일 인증 무시 (현재 deprecated)
+     */
+//    @Bean
+//    public WebSecurityCustomizer webSecurityCustomizer() {
+//        return (web -> web.ignoring()
+//                .requestMatchers(PathRequest.toStaticResources().atCommonLocations())
+//                .antMatchers("/vendor/**")
+//                .antMatchers("/scss/**")
+//                .antMatchers("/img/**"));
+//    }
+
+    /*
+        정적파일 인증 무시
+     */
     @Bean
-    public PasswordEncoder passwordEncoder() {
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    @Order(1)
+    public SecurityFilterChain exceptionSecurityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .requestMatchers((matchers) -> matchers.antMatchers("/css/**", "/img/**", "/js/**", "/vendor/**", "/scss/**", "/img/**"))
+                .authorizeHttpRequests((authorize) -> authorize.anyRequest().permitAll())
+                .requestCache().disable()
+                .securityContext().disable()
+                .sessionManagement().disable();
+
+        return http.build();
     }
 
     @Bean
-    public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web -> web.ignoring()
-                .requestMatchers(PathRequest.toStaticResources().atCommonLocations())
-                .antMatchers("/vendor/**")
-                .antMatchers("/scss/**")
-                .antMatchers("/img/**"));
-    }
-
-    @Bean
+    @Order(2)
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         http

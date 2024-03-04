@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.mapper.crawl.CrawlLogMapper">
+
+    <select id="getCrawlLogList" resultType="com.example.demo.dto.crawl.CrawlLogDto">
+    /* com.example.demo.repository.CrawlLogMapper.getCrawlLogList */
+        SELECT ID
+             , CONTENT
+             , TO_CHAR(CREATED_AT, 'YYYY-MM-DD HH24:MI:SS') AS CREATED_AT
+          FROM CRAWL_LOG CL
+         ORDER BY ID DESC LIMIT 10 OFFSET #{offset}
+    </select>
+
+    <select id="getCrawlLogTotCnt" resultType="int">
+    /* com.example.demo.repository.CrawlLogMapper.getCrawlLogTotCnt */
+        SELECT COUNT(1) AS TOT_CNT
+          FROM CRAWL_LOG
+    </select>
+
+</mapper>
