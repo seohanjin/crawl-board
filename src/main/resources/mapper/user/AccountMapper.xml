@@ -10,7 +10,7 @@
              , USER_PW
              , AGENCY
           FROM ACCOUNT CL
---          ORDER BY  DESC LIMIT 10 OFFSET #{offset}
+         ORDER BY 1 DESC LIMIT 10 OFFSET #{offset}
     </select>
 
     <select id="getAccountTotCnt" resultType="int">
