@@ -6,9 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -16,10 +14,14 @@ import javax.persistence.MappedSuperclass;
 public class Account{
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
     private String userId;
     private String userPw;
     private String agency;
     private String role;
+    private String remark;
 
     @Builder
     public Account(String userId, String userPw) {

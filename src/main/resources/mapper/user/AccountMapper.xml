@@ -6,17 +6,44 @@
 
     <select id="getAccountList" resultType="com.example.demo.dto.user.AccountDto">
     /* com.example.demo.mapper.AccountMapper.getAccountList */
-        SELECT USER_ID
+        SELECT ID
+             , USER_ID
              , USER_PW
-             , AGENCY
-          FROM ACCOUNT CL
-         ORDER BY 1 DESC LIMIT 10 OFFSET #{offset}
+             , COALESCE(AGENCY, '')             AS AGENCY
+             , CASE ROLE WHEN 'ROLE_USER'       THEN '유저'
+                         WHEN 'ROLE_MANAGER'    THEN '매니저'
+                         WHEN 'ROLE_ADMIN'      THEN '관리자'
+                         ELSE '유저' END         AS ROLE
+             , COALESCE(REMARK, '')             AS REMARK
+             , 0                                AS SLOT_CNT
+          FROM ACCOUNT      AC
+         WHERE 1=1
+        <if test="id != null and id != ''">
+            AND AC.ID      = #{id}
+        </if>
+        <if test="userId != null and userId != ''">
+            AND AC.USER_ID LIKE '%' || #{userId} || '%'
+        </if>
+        <if test="remark != null and remark != ''">
+            AND AC.REMARK  LIKE '%' || #{remark} || '%'
+        </if>
+         ORDER BY ID DESC LIMIT 10 OFFSET #{offset}
     </select>
 
     <select id="getAccountTotCnt" resultType="int">
     /* com.example.demo.mapper.AccountMapper.getAccountTotCnt */
         SELECT COUNT(1)
-          FROM ACCOUNT
+          FROM ACCOUNT     AC
+         WHERE 1=1
+        <if test="id != null and id != ''">
+            AND AC.ID      = #{id}
+        </if>
+        <if test="userId != null and userId != ''">
+            AND AC.USER_ID LIKE '%' || #{userId} || '%'
+        </if>
+        <if test="remark != null and remark != ''">
+            AND AC.REMARK  LIKE '%' || #{remark} || '%'
+        </if>
     </select>
 
 </mapper>

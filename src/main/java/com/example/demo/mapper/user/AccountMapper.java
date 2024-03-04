@@ -8,6 +8,6 @@ import java.util.List;
 @Mapper
 public interface AccountMapper {
 
+    int getAccountTotCnt(AccountDto accountDto);
     List<AccountDto> getAccountList(AccountDto accountDto);
-    int getAccountTotCnt();
 }

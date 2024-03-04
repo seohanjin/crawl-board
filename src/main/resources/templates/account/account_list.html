@@ -12,9 +12,31 @@
         $(document).ready(function() {
             init();
 
-             $("#pgDiv").on('click', '.page-link', function() {
+            $("#pgDiv").on('click', '.page-link', function() {
                 clickPageFn($(this)[0]);
             });
+
+            $("#searchBtn").click(function() {
+                let search_id = $("#search_id").val();
+                let search_userId = $("#search_userId").val();
+                let search_remark = $("#search_remark").val();
+
+                let param = {page : 1,
+                             id     : search_id,
+                             userId : search_userId,
+                             remark : search_remark
+                            };
+                getData(param);
+            });
+
+            $("#abc td").hover(function(){
+                //마우스 올렸을 때
+                $(this).css("background-color", "orange");
+            
+            }, function() {
+                //마우스 안올렸을 때
+                $(this).css("background-color", "white");
+            })
 
         });
 
@@ -22,7 +44,7 @@
             let param = {
                 page : 1
             };
-            getCrawlLogData(param);
+            getData(param);
         }
 
         function clickPageFn(event) {
@@ -37,10 +59,10 @@
                 curPageNum = event.innerText;
             }
             let param = {page : curPageNum}
-            getCrawlLogData(param);
+            getData(param);
         }
 
-        function getCrawlLogData(param) {
+        function getData(param) {
             $.ajax({
                 url: "/api/account/list",
                 data: param,
@@ -48,6 +70,7 @@
                 success: function(data) {
                     setTbData(data.resultList);
                     setPagination(data);
+                    $("#totCnt").text(data.totCnt)
                 },
             }).done(function (data){
                 
@@ -57,17 +80,20 @@
         function setTbData(data) {
             $("#tbDiv").empty();
 
-            let tags = [];
-
+            let html = '';
             $.each(data, function(index, item) {
-                tags.push("<tr>");
-                tags.push("<td>" + item.userId + "</td>");
-                tags.push("<td>" + item.userPw + "</td>");
-                tags.push("<td>" + item.agency + "</td>");
-                tags.push("</tr>");
+                html += '<tr>';
+                html += "<td class='text-center'>" + item.id + "</td>";
+                html += "<td>" + item.userId + "</td>";
+                html += "<td>" + item.userPw + "</td>";
+                html += "<td class='text-center'>" + item.role + "</td>";
+                html += "<td class='text-center'>" + item.agency + "</td>";
+                html += "<td class='text-right'>" + item.slotCnt + "</td>";
+                html += "<td>" + item.remark + "</td>";
+                html += '</tr>'
             });
 
-            $("#tbDiv").append(tags);
+            $("#tbDiv").append(html);
         }
 
         function setPagination(data) {
@@ -76,32 +102,31 @@
 
             $("#pgDiv").empty();
 
-            let tags = [];
+            let html = '';
 
-            
             // Previous 버튼 세팅 > 현재 페이지가 1 이라면 disabled
             if ('1' == data.curPageNum) {
-                tags.push("<li class='page-item disabled' ><a class='page-link' id='pagePrevClick'>Previous</a></li>")
+                html += "<li class='page-item disabled' ><a class='page-link' id='pagePrevClick'>Previous</a></li>";
             } else {
-                tags.push("<li class='page-item' ><a class='page-link' id='pagePrevClick'>Previous</a></li>")
+                html += "<li class='page-item' ><a class='page-link' id='pagePrevClick'>Previous</a></li>";
             }
             
             for (let i = data.curGrpFirstPageNm ; i <= data.curGrpLastPageNm; i++) {
                 if (i == data.curPageNum) {
-                    tags.push("<li class='page-item active' id='pageClick'><a class='page-link'>"+ i +"</a></li>")
+                    html += "<li class='page-item active' id='pageClick'><a class='page-link'>"+ i +"</a></li>";
                 } else {
-                    tags.push("<li class='page-item' id='pageClick'><a class='page-link' id='pageClick'>"+ i +"</a></li>")
+                    html += "<li class='page-item' id='pageClick'><a class='page-link' id='pageClick'>"+ i +"</a></li>";
                 }
             }
 
             // Next 버튼 세팅 > 현재 페이지가 총페이지라면 disabled
             if (data.totPageCnt == data.curPageNum) {
-                tags.push("<li class='page-item disabled' ><a class='page-link' id='pageNextClick'>Next</a></li>")    
+                html += "<li class='page-item disabled' ><a class='page-link' id='pageNextClick'>Next</a></li>";
             } else {
-                tags.push("<li class='page-item' ><a class='page-link' id='pageNextClick'>Next</a></li>")
+                html += "<li class='page-item' ><a class='page-link' id='pageNextClick'>Next</a></li>";
             }
 
-            $("#pgDiv").append(tags)
+            $("#pgDiv").append(html)
 
         }
         
@@ -131,36 +156,62 @@
                     <input type="hidden" id="curGrpLastPageNm" />
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-                    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p>
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h5 class="m-0 font-weight-bold text-primary">검색</h5>
 
+                            <form class="form-row" id="searchForm">
+                                <div class="col-md-2 mb-3">
+                                    <input type="text" class="form-control" id="search_id" name="role" placeholder="번호">
+                                  </div>
+                                <div class="col-md-2 mb-3">
+                                  <input type="text" class="form-control" id="search_userId" name="userId" placeholder="아이디" >
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <input type="text" class="form-control" id="search_remark" name="remark" placeholder="비고">
+                                </div>
+                                
+                                <a type="submit" class="btn btn-secondary mb-3" id="searchBtn">검색</a>
+                            </form>
+                        </div>
+                    </div>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">유저정보</h6>
                         </div>
                         <div class="card-body">
+                            <h8 class="m-0 text-secondary"><span class="font-weight-bold">총 <a id="totCnt"></a>개 </span></h8>
                             <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
+                                <table class="table table-hover">
+                                    <colgroup>
+                                        <col width="10rem"/>
+                                        <col width="20rem"/>
+                                        <col width="20rem"/>
+                                        <col width="10rem"/>
+                                        <col width="20rem"/>
+                                        <col width="10rem"/>
+                                        <col width="90rem"/>
+                                    </colgroup>
+                                    <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">Id</th>
-                                        <th scope="col">내용</th>
-                                        <th scope="col">일자</th>
+                                        <th class="text-center" scope="col">번호</th>
+                                        <th class="text-center" scope="col">아이디</th>
+                                        <th class="text-center" scope="col">비밀번호</th>
+                                        <th class="text-center" scope="col">등급</th>
+                                        <th class="text-center" scope="col">대행사</th>
+                                        <th class="text-center" scope="col">슬롯수</th>
+                                        <th class="text-center" scope="col">비고</th>
                                     </tr>
                                     </thead>
                                     <tbody id="tbDiv">
+                                        <!-- 테이블 td -->
                                     </tbody>
                                 </table>
+
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination justify-content-end" id="pgDiv">
-<!--                                        <li class="page-item" ><a class="page-link" id="pageClick">Previous</a></li>-->
-<!--                                        <li class="page-item active"><a class="page-link">1</a></li>-->
-<!--                                        <li class="page-item"><a class="page-link">2</a></li>-->
-<!--                                        <li class="page-item"><a class="page-link">3</a></li>-->
-<!--                                        <li class="page-item"><a class="page-link">Next</a></li>-->
+                                        <!-- 페이징 -->
                                     </ul>
                                 </nav>
                             </div>
@@ -188,7 +239,7 @@
     <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="/js/sb-admin-2.min.js"></script>
+    <script src="/js/sb-admin-2.min.js"></script>z
 
     <!-- Page level plugins -->
     <script src="/vendor/datatables/jquery.dataTables.min.js"></script>

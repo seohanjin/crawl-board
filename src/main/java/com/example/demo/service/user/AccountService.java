@@ -22,7 +22,7 @@ public class AccountService {
         int offset = (accountDto.getPage() - 1) * 10;
         accountDto.setOffset(offset);
 
-        int accountTotCnt = accountMapper.getAccountTotCnt();
+        int accountTotCnt = accountMapper.getAccountTotCnt(accountDto);
         List<AccountDto> accountList = accountMapper.getAccountList(accountDto);
 
         Map<String, Object> accountInfo = boardService.setBoardInfo(accountTotCnt, accountDto.getPage());

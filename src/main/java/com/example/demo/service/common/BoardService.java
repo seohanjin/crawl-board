@@ -31,6 +31,7 @@ public class BoardService {
         }
 
         Map<String, Object> result = new HashMap<>();
+        result.put("totCnt", totCnt);
         result.put("totPageCnt", totPageCnt);
         result.put("curPageNum", curPageNum);
         result.put("currentPageGrp", currentPageGrp);
