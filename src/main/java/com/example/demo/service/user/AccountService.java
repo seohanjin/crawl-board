@@ -25,7 +25,7 @@ public class AccountService {
         int accountTotCnt = accountMapper.getAccountTotCnt();
         List<AccountDto> accountList = accountMapper.getAccountList(accountDto);
 
-        Map<String, Object> accountInfo = boardService.getBoardInfo(accountTotCnt, accountDto.getPage());
+        Map<String, Object> accountInfo = boardService.setBoardInfo(accountTotCnt, accountDto.getPage());
 
         accountInfo.put("resultList", accountList);
 

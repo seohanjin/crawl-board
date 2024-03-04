@@ -24,7 +24,7 @@ public class CrawlLogService {
         int crawlLogTotCnt = crawlLogMapper.getCrawlLogTotCnt();
         List<CrawlLogDto> crawlLogList = crawlLogMapper.getCrawlLogList(crawlLogDto);
 
-        Map<String, Object> boardInfo = boardService.getBoardInfo(crawlLogTotCnt, crawlLogDto.getCurrentPageNum());
+        Map<String, Object> boardInfo = boardService.setBoardInfo(crawlLogTotCnt, crawlLogDto.getCurrentPageNum());
 
         boardInfo.put("crawlList", crawlLogList);
 

@@ -8,7 +8,7 @@ import java.util.Map;
 @Service
 public class BoardService {
 
-    public Map<String, Object> getBoardInfo(int totCnt, int curPageNum) {
+    public Map<String, Object> setBoardInfo(int totCnt, int curPageNum) {
 
 //        총 페이지 개수 = Math.ceil(전체 컨텐츠 개수 / 한 페이지에 보여줄 컨텐츠의 개수)
 //        화면에 보여질 페이지 그룹 = Math.ceil(현재 페이지 번호 / 한 화면에 보여줄 페이지의 개수)
@@ -32,7 +32,7 @@ public class BoardService {
 
         Map<String, Object> result = new HashMap<>();
         result.put("totPageCnt", totPageCnt);
-        result.put("currentPageNum", curPageNum);
+        result.put("curPageNum", curPageNum);
         result.put("currentPageGrp", currentPageGrp);
         result.put("curGrpFirstPageNm", curGrpFirstPageNm);
         result.put("curGrpLastPageNm", curGrpLastPageNm);
