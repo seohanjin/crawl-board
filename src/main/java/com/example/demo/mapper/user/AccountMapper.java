@@ -10,4 +10,6 @@ public interface AccountMapper {
 
     int getAccountTotCnt(AccountDto accountDto);
     List<AccountDto> getAccountList(AccountDto accountDto);
+    AccountDto getAccount(AccountDto accountDto);
+    int updateAccountDetail(AccountDto accountDto);
 }

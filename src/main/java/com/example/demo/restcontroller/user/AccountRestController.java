@@ -4,6 +4,7 @@ import com.example.demo.dto.user.AccountDto;
 import com.example.demo.service.user.AccountService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,5 +23,14 @@ public class AccountRestController {
         Map<String, Object> result = accountService.getAccountList(accountDto);
 
         return result;
+    }
+
+    @GetMapping("/detail")
+    public AccountDto getAccountDetail(AccountDto accountDto) {
+        return accountService.getAccount(accountDto);
+    }
+    @PostMapping("/detail")
+    public int updateAccountDetail(AccountDto accountDto) {
+        return accountService.updateAccountDetail(accountDto);
     }
 }

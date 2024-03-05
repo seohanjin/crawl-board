@@ -31,4 +31,14 @@ public class AccountService {
 
         return accountInfo;
     }
+
+    public int updateAccountDetail(AccountDto accountDto) {
+        int result = 0;
+        result += accountMapper.updateAccountDetail(accountDto);
+        return result;
+    }
+
+    public AccountDto getAccount(AccountDto accountDto) {
+        return accountMapper.getAccount(accountDto);
+    }
 }

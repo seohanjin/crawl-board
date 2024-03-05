@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head th:replace="layout/header::header_layout"></head>
+
+<body id="page-top">
+    <!-- Bootstrap core JavaScript-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            init();
+
+            // 페이지 버튼 클릭 시
+            $("#pgDiv").on('click', '.page-link', function() {
+                clickPageFn($(this)[0]);
+            });
+
+            // 검색 버튼 클릭 시
+            $("#searchBtn").click(function() {
+                let search_id = $("#search_id").val();
+                let search_userId = $("#search_userId").val();
+                let search_remark = $("#search_remark").val();
+
+                let param = {page : 1,
+                             id     : search_id,
+                             userId : search_userId,
+                             remark : search_remark
+                            };
+                getData(param);
+            });
+
+            // 테이블 로우 더블클릭 시
+            $("#tbDiv").on("dblclick", "tr", function(e) {
+                if ($(e.target).hasClass("tbUserInfo")) {
+
+                    let td = $(this).children();
+                    let id = td.eq(0).text();
+
+                    let url = "/account/detail/" + id
+                    $(location).attr('href', url);
+                }
+            });
+
+            // 체크박스 전체 선택 및 해제
+            $("#checkBoxHeader").on("click", function() {
+                let _this = $(this);
+                if (_this.prop("checked")) {
+                    console.log("## 헤더 체크박스 선택 ##");
+                    $("input[type=checkbox]").prop("checked", true);
+                } else {
+                    console.log("## 헤더 체크박스 선택 ##");
+                    $("input[type=checkbox]").prop("checked", false);
+                }
+            });
+
+            $("#btnSave").on("click", function() {
+                console.log("## click ##");
+
+                let params = new Array();
+                $(".tbChkBox").find('input:checked').each(function() {
+                    let param = {};
+                    let _row = $(this).closest('tr');
+
+                    let val1 = _row.find('td:eq(3)').find('input').val();   // 가격비교mid
+                    let val2 = _row.find('td:eq(4)').find('input').val();   // 단일상품mid
+                    let val3 = _row.find('td:eq(5)').find('input').val();   // 검색키워드
+                    let val4 = _row.find('td:eq(6)').find('input').val();   // 메모
+
+                    param = {
+                        val1 : val1,
+                        val2 : val2,
+                        val3 : val3,
+                        val4 : val4
+                    }
+
+                    params.push(param);
+                });
+
+                console.log("## params ##", params);
+
+                $.ajax({
+                    url: "/api/slot/list",
+                    data: JSON.stringify(params),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function(data) {
+                        setTbData(data.resultList);
+                        setPagination(data);
+                        $("#totCnt").text(data.totCnt)
+                    },
+                }).done(function (data){
+                    
+                });
+
+            });
+        });
+
+        function init() {
+            let param = {
+                page : 1
+            };
+            getData(param);
+        }
+
+        function clickPageFn(event) {
+            let curPageNum;
+            let activePageNm = parseInt($(".page-item.active")[0].innerText);
+
+            if (event.innerText == 'Next') {            // Next 버튼 클릭 시
+                curPageNum = activePageNm + 1;
+            } else if (event.innerText == 'Previous') { // Previous 버튼 클릭 시
+                curPageNum = activePageNm - 1;
+            } else {                                    // 일반 버튼 클릭 시
+                curPageNum = event.innerText;
+            }
+            let param = {page : curPageNum}
+            getData(param);
+        }
+
+        function getData(param) {
+            $.ajax({
+                url: "/api/account/list",
+                data: param,
+                type: 'GET',
+                success: function(data) {
+                    setTbData(data.resultList);
+                    setPagination(data);
+                    $("#totCnt").text(data.totCnt)
+                },
+            }).done(function (data){
+                
+            });
+        }
+
+        // 테이블 세팅
+        function setTbData(data) {
+            $("#tbDiv").empty();
+
+            let html = '';
+            $.each(data, function(index, item) {
+                html += '<tr>';
+                html += "<td class='text-center align-middle tbChkBox'><input type='checkbox' /></td>";
+                html += "<td class='text-center align-middle'>" + item.id + "</td>";
+                html += "<td class='align-middle'>" + item.userId + "</td>";
+                html += "<td><input type='text' class='form-control'/></td>";
+                html += "<td><input type='text' class='form-control'/></td>";
+                html += "<td class='text-right'><input type='text' class='form-control'/></td>";
+                html += "<td> <input type='text' class='form-control'/></td>";
+                html += "<td class='align-middle'>" + item.remark + "</td>";
+                html += "<td class='align-middle'>" + item.remark + "</td>";
+                html += "<td class='text-center align-middle'><button type='button' class='btn btn-success' id='slotBtn' onclick=\"location.href=\'/slot/list?id=/" +item.id + "\'\">이동</button></td>";
+                html += '</tr>'
+            });
+
+            $("#tbDiv").append(html);
+        }
+
+        // 페이징 세팅
+        function setPagination(data) {
+            $("#curGrpFirstPageNm").val(data.curGrpFirstPageNm);
+            $("#curGrpLastPageNm").val(data.curGrpLastPageNm);
+
+            $("#pgDiv").empty();
+
+            let html = '';
+
+            // Previous 버튼 세팅 > 현재 페이지가 1 이라면 disabled
+            if ('1' == data.curPageNum) {
+                html += "<li class='page-item disabled' ><a class='page-link' id='pagePrevClick'>Previous</a></li>";
+            } else {
+                html += "<li class='page-item' ><a class='page-link' id='pagePrevClick'>Previous</a></li>";
+            }
+            
+            for (let i = data.curGrpFirstPageNm ; i <= data.curGrpLastPageNm; i++) {
+                if (i == data.curPageNum) {
+                    html += "<li class='page-item active' id='pageClick'><a class='page-link'>"+ i +"</a></li>";
+                } else {
+                    html += "<li class='page-item' id='pageClick'><a class='page-link' id='pageClick'>"+ i +"</a></li>";
+                }
+            }
+
+            // Next 버튼 세팅 > 현재 페이지가 총페이지라면 disabled
+            if (data.totPageCnt == data.curPageNum) {
+                html += "<li class='page-item disabled' ><a class='page-link' id='pageNextClick'>Next</a></li>";
+            } else {
+                html += "<li class='page-item' ><a class='page-link' id='pageNextClick'>Next</a></li>";
+            }
+
+            $("#pgDiv").append(html)
+
+        }
+        
+    </script>
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul th:replace="layout/sidebar::sidebar_layout"></ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav th:replace="layout/top::top_layout"></nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <input type="hidden" id="curGrpFirstPageNm" />
+                    <input type="hidden" id="curGrpLastPageNm" />
+
+                    <!-- Page Heading -->
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h5 class="m-0 font-weight-bold text-primary">검색</h5>
+
+                            <form class="form-row" id="searchForm">
+                                <div class="col-md-2 mb-3">
+                                    <input type="text" class="form-control" id="search_id" name="role" placeholder="번호">
+                                  </div>
+                                <div class="col-md-2 mb-3">
+                                  <input type="text" class="form-control" id="search_userId" name="userId" placeholder="아이디" >
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <input type="text" class="form-control" id="search_remark" name="remark" placeholder="비고">
+                                </div>
+                                
+                                <a type="submit" class="btn btn-secondary mb-3" id="searchBtn">검색</a>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">유저정보</h6>
+                        </div>
+                        <div class="card-body">
+                            <div styel="width: 100%">
+                                <a class="m-0 text-dark">총 <a class="m-0 text-dark" id="totCnt"></a>건</a>
+                                <span class="justify-content-end float-right" style="padding-bottom: 5px">
+                                    <button type="button" class="btn btn-primary btn-sm" id="btnSave">저장</button>
+                                    <button type="button" class="btn btn-secondary btn-sm" id="btnExtention">연장(10일)</button>
+                                </span>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <colgroup>
+                                        <col width="10rem"/>
+                                        <col width="20rem"/>
+                                        <col width="20rem"/>
+                                        <col width="110rem"/>
+                                        <col width="110rem"/>
+                                        <col width="110rem"/>
+                                        <col width="110rem"/>
+                                        <col width="5rem"/>
+                                        <col width="10rem"/>
+                                        <col width="10rem"/>
+                                    </colgroup>
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th class="text-center" scope="col"><input type="checkbox" id="checkBoxHeader"/></th>
+                                        <th class="text-center" scope="col">슬롯번호</th>
+                                        <th class="text-center" scope="col">아이디</th>
+                                        <th class="text-center" scope="col">가격비교mid</th>
+                                        <th class="text-center" scope="col">단일상품mid</th>
+                                        <th class="text-center" scope="col">검색키워드</th>
+                                        <th class="text-center" scope="col">메모</th>
+                                        <th class="text-center" scope="col">상태</th>
+                                        <th class="text-center" scope="col">시작일</th>
+                                        <th class="text-center" scope="col">종료일</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tbDiv">
+                                        <!-- 테이블 td -->
+                                    </tbody>
+                                </table>
+
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end" id="pgDiv">
+                                        <!-- 페이징 -->
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer th:replace="layout/footer::footer_layout"></footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/js/sb-admin-2.min.js"></script>z
+
+    <!-- Page level plugins -->
+    <script src="/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="/js/demo/datatables-demo.js"></script>
+
+</body>
+
+
+</html>

@@ -21,7 +21,7 @@ public class AccountController {
 
     @GetMapping("/list")
     public String getAccountList() {
-        return "account/list";
+        return "account/account_list";
     }
 
     @GetMapping("/profile")
@@ -53,19 +53,10 @@ public class AccountController {
 
 
     @GetMapping("/detail/{id}")
-    public String getAccountDetail(@PathVariable(value = "id") Long id, @ModelAttribute("accountForm") AccountDto accountDto, Model model) {
+    public String getAccountDetail(@PathVariable(value = "id") Long id, Model model) {
 
-        Account findUser = userService.findUserInfo(id);
+        model.addAttribute("id", id);
 
-//        model.addAttribute("accountForm", accountDto);
-        model.addAttribute("id", findUser.getId());
-        model.addAttribute("userId", findUser.getUserId());
-        model.addAttribute("userPw", findUser.getUserPw());
-        model.addAttribute("role", findUser.getRole());
-        model.addAttribute("remark", findUser.getRemark());
-        model.addAttribute("agency", findUser.getAgency());
-
-
-        return "account/detail";
+        return "account/account_detail";
     }
 }

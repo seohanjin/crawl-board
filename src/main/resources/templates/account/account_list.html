@@ -34,21 +34,14 @@
             // 테이블 로우 더블클릭 시
             $("#tbDiv").on("dblclick", "tr", function(e) {
                 if ($(e.target).hasClass("tbUserInfo")) {
-                    console.log("# $(this) ##", $(this));
+
                     let td = $(this).children();
                     let id = td.eq(0).text();
-                    console.log("## id ##", id);
 
-                    let userId = td.eq(1).text();
-                    console.log("## userId ##", userId);
+                    let url = "/account/detail/" + id
+                    $(location).attr('href', url);
                 }
             });
-
-            // 슬롯관리 버튼 클릭 시
-            $("#tbDiv").on("click", "#slotBtn", function() {
-                console.log($(this).parent());
-                alert("slotBtn click");
-            })
 
         });
 
@@ -96,14 +89,14 @@
             let html = '';
             $.each(data, function(index, item) {
                 html += '<tr>';
-                html += "<td class='text-center tbUserInfo'>" + item.id + "</td>";
-                html += "<td class='tbUserInfo'>" + item.userId + "</td>";
-                html += "<td class='tbUserInfo'>" + item.userPw + "</td>";
-                html += "<td class='text-center tbUserInfo'>" + item.role + "</td>";
-                html += "<td class='text-center tbUserInfo'>" + item.agency + "</td>";
-                html += "<td class='text-right tbUserInfo'>" + item.slotCnt + "</td>";
-                html += "<td class='tbUserInfo'>" + item.remark + "</td>";
-                html += "<td class='text-center'><button type='button' class='btn btn-success' id='slotBtn' onclick=\"location.href=\'/account/detail/" +item.id + "\'\">이동</button></td>";
+                html += "<td class='text-center align-middle tbUserInfo'>" + item.id + "</td>";
+                html += "<td class='align-middle tbUserInfo'>" + item.userId + "</td>";
+                html += "<td class='align-middle tbUserInfo'>" + item.userPw + "</td>";
+                html += "<td class='text-center align-middle tbUserInfo'>" + item.role + "</td>";
+                html += "<td class='text-center align-middle tbUserInfo'>" + item.agency + "</td>";
+                html += "<td class='text-right align-middle tbUserInfo'>" + item.slotCnt + "</td>";
+                html += "<td class='align-middle tbUserInfo'>" + item.remark + "</td>";
+                html += "<td class='text-center'><button type='button' class='btn btn-success' id='slotBtn' onclick=\"location.href=\'/slot/list?id=" + item.id + "\'\">이동</button></td>";
                 html += '</tr>'
             });
 
@@ -196,7 +189,10 @@
                             <h6 class="m-0 font-weight-bold text-primary">유저정보</h6>
                         </div>
                         <div class="card-body">
-                            <h8 class="m-0 text-secondary"><span class="font-weight-bold">총 <a id="totCnt"></a>개 </span></h8>
+                            <div styel="width: 100%">
+                                <a class="m-0 text-dark">총 <a class="m-0 text-dark" id="totCnt"></a>건</a>
+                                <span class="justify-content-end"><h6 class="m-0 text-danger" style="float:right">행 더블클릭 시 상세정보 이동</h6></span>
+                            </div>
                             <div class="table-responsive">
                                 <table class="table table-hover">
                                     <colgroup>

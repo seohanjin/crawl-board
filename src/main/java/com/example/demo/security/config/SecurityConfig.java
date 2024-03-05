@@ -73,7 +73,7 @@ public class SecurityConfig {
 
         http
                 .authorizeRequests()
-                .antMatchers("/account/detail/**", "/api/account/detail/**").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/account/detail/**", "/api/account/detail/**", "/api/account/update/**").hasAnyRole("MANAGER", "ADMIN")
                 .antMatchers("/", "/register", "/login/**", "/login?error*", "/crawlLog").permitAll()
 //                .antMatchers("/mypage", "/login").hasRole("USER")
 //                .antMatchers("/config").hasRole("ADMIN")
@@ -94,6 +94,9 @@ public class SecurityConfig {
                 .and()
                 .exceptionHandling()
                 .accessDeniedHandler(accessDeniedHandler())
+
+                .and()
+                .csrf().disable()
 
         ;
 
