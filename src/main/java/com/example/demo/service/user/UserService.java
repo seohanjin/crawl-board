@@ -14,6 +14,11 @@ public class UserService {
 
     private final UserRepository userRepository;
 
+    public Account findUserInfo(Long id) {
+        Account account = userRepository.findById(id).orElse(null);
+        return account;
+    }
+
     public boolean duplChkAccount(AccountDto accountDto) {
         Account findUser = userRepository.findByUserId(accountDto.getUserId());
         if (findUser != null) {

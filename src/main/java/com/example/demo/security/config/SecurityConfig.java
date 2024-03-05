@@ -73,9 +73,9 @@ public class SecurityConfig {
 
         http
                 .authorizeRequests()
-                .antMatchers("/", "/register", "/login/**", "/login?error*", "/crawlLog", "/api/**").permitAll()
+                .antMatchers("/account/detail/**", "/api/account/detail/**").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/", "/register", "/login/**", "/login?error*", "/crawlLog").permitAll()
 //                .antMatchers("/mypage", "/login").hasRole("USER")
-//                .antMatchers("/buttons").hasRole("MANAGER")
 //                .antMatchers("/config").hasRole("ADMIN")
                 .anyRequest().authenticated()
 

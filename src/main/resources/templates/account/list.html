@@ -12,10 +12,12 @@
         $(document).ready(function() {
             init();
 
+            // 페이지 버튼 클릭 시
             $("#pgDiv").on('click', '.page-link', function() {
                 clickPageFn($(this)[0]);
             });
 
+            // 검색 버튼 클릭 시
             $("#searchBtn").click(function() {
                 let search_id = $("#search_id").val();
                 let search_userId = $("#search_userId").val();
@@ -29,13 +31,23 @@
                 getData(param);
             });
 
-            $("#abc td").hover(function(){
-                //마우스 올렸을 때
-                $(this).css("background-color", "orange");
-            
-            }, function() {
-                //마우스 안올렸을 때
-                $(this).css("background-color", "white");
+            // 테이블 로우 더블클릭 시
+            $("#tbDiv").on("dblclick", "tr", function(e) {
+                if ($(e.target).hasClass("tbUserInfo")) {
+                    console.log("# $(this) ##", $(this));
+                    let td = $(this).children();
+                    let id = td.eq(0).text();
+                    console.log("## id ##", id);
+
+                    let userId = td.eq(1).text();
+                    console.log("## userId ##", userId);
+                }
+            });
+
+            // 슬롯관리 버튼 클릭 시
+            $("#tbDiv").on("click", "#slotBtn", function() {
+                console.log($(this).parent());
+                alert("slotBtn click");
             })
 
         });
@@ -77,25 +89,28 @@
             });
         }
 
+        // 테이블 세팅
         function setTbData(data) {
             $("#tbDiv").empty();
 
             let html = '';
             $.each(data, function(index, item) {
                 html += '<tr>';
-                html += "<td class='text-center'>" + item.id + "</td>";
-                html += "<td>" + item.userId + "</td>";
-                html += "<td>" + item.userPw + "</td>";
-                html += "<td class='text-center'>" + item.role + "</td>";
-                html += "<td class='text-center'>" + item.agency + "</td>";
-                html += "<td class='text-right'>" + item.slotCnt + "</td>";
-                html += "<td>" + item.remark + "</td>";
+                html += "<td class='text-center tbUserInfo'>" + item.id + "</td>";
+                html += "<td class='tbUserInfo'>" + item.userId + "</td>";
+                html += "<td class='tbUserInfo'>" + item.userPw + "</td>";
+                html += "<td class='text-center tbUserInfo'>" + item.role + "</td>";
+                html += "<td class='text-center tbUserInfo'>" + item.agency + "</td>";
+                html += "<td class='text-right tbUserInfo'>" + item.slotCnt + "</td>";
+                html += "<td class='tbUserInfo'>" + item.remark + "</td>";
+                html += "<td class='text-center'><button type='button' class='btn btn-success' id='slotBtn' onclick=\"location.href=\'/account/detail/" +item.id + "\'\">이동</button></td>";
                 html += '</tr>'
             });
 
             $("#tbDiv").append(html);
         }
 
+        // 페이징 세팅
         function setPagination(data) {
             $("#curGrpFirstPageNm").val(data.curGrpFirstPageNm);
             $("#curGrpLastPageNm").val(data.curGrpLastPageNm);
@@ -192,6 +207,7 @@
                                         <col width="20rem"/>
                                         <col width="10rem"/>
                                         <col width="90rem"/>
+                                        <col width="20rem"/>
                                     </colgroup>
                                     <thead class="thead-dark">
                                     <tr>
@@ -202,6 +218,7 @@
                                         <th class="text-center" scope="col">대행사</th>
                                         <th class="text-center" scope="col">슬롯수</th>
                                         <th class="text-center" scope="col">비고</th>
+                                        <th class="text-center" scope="col">슬롯관리</th>
                                     </tr>
                                     </thead>
                                     <tbody id="tbDiv">

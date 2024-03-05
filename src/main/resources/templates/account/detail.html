@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head th:replace="layout/header::header_layout"></head>
+
+<body id="page-top">
+<!-- Bootstrap core JavaScript-->
+<script src="/vendor/jquery/jquery.min.js"></script>
+
+<script type="text/javascript">
+    let $id;
+
+    $(document).ready(function() {
+        $id = $("#id").val();
+        console.log("## $id ##", $id);
+    });
+</script>
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul th:replace="layout/sidebar::sidebar_layout"></ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav th:replace="layout/top::top_layout"></nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center">
+                        <div class="w-50 p-3">
+                            <!-- Account details card-->
+                            <div class="card mb-4">
+                                <div class="card-header">유저정보</div>
+                                <div class="card-body">
+                                    <form>
+<!--                                        <input type="text" th:value="$id}">-->
+                                        <!-- Form Group (username)-->
+                                        <div class="mb-3">
+                                            <label class="small mb-1" for="id">회원번호</label>
+                                            <input class="form-control" th:value="${id}" id="id" name="id" type="text" readonly>
+                                        </div>
+
+                                        <!-- Form Row-->
+                                        <div class="row gx-3 mb-3">
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="userId">아이디</label>
+                                                <input class="form-control" th:value="${userId}" id="userId" type="text" name="userId" readonly>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="small mb-1" for="userPw">비밀번호</label>
+                                                <input class="form-control" th:value="${userPw}" id="userPw" type="text" name="userPw" readonly>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="small mb-1" for="agency">대행사</label>
+                                            <input class="form-control" th:value="${agency}" id="agency" name="agency" type="text" readonly>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="remark" class="form-label">비고</label>
+                                            <textarea class="form-control" th:text="${remark}" id="remark" rows="3"></textarea>
+                                        </div>
+                                        <br>
+
+                                        <div class="form-check">
+                                            <input th:checked="${role eq 'ROLE_USER'}" class="form-check-input" type="radio" name="flexRadioDefault" id="ROLE_USER">
+                                            <label class="form-check-label" for="ROLE_USER">
+                                                유저
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input th:checked="${role eq 'ROLE_MANAGER'}" class="form-check-input" type="radio" name="flexRadioDefault" id="ROLE_MANAGER">
+                                            <label class="form-check-label" for="ROLE_MANAGER">
+                                                매니저
+                                            </label>
+                                        </div>
+                                        <br>
+
+                                        <!-- Save changes button-->
+                                        <button class="btn btn-primary" type="button">변경</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer th:replace="layout/footer::footer_layout"></footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
